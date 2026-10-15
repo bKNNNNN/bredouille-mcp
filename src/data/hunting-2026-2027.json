@@ -1,0 +1,1301 @@
+{
+  "season": "2026-2027",
+  "checkedOn": "2026-10-15",
+  "method": "Dates lues dans les arrêtés préfectoraux d’ouverture et de clôture 2026-2027 : sur le site de la préfecture quand il a pu être lu, sinon dans la copie publiée par la Fédération nationale des chasseurs (chasseurdefrance.com). Certaines copies sont des scans lus par reconnaissance de caractères : un chiffre peut être faux. Rien n’est déduit : une valeur absente veut dire « non lue », pas « aucune ».",
+  "licence": "Dates relevées par Bredouille dans les arrêtés préfectoraux publiés. Source et lien par département.",
+  "departements": [
+    {
+      "code": "01",
+      "name": "Ain",
+      "opening": "2026-09-13",
+      "closing": "2027-02-28",
+      "noHuntingDays": "Chasse à tir et au vol suspendues le mardi et le vendredi (sauf jour férié), avec des exceptions listées dans l’article 4",
+      "source": {
+        "url": "https://www.chasseurdefrance.com/wp-content/uploads/2026/06/FDC-01.pdf",
+        "kind": "copie-fnc"
+      },
+      "ocr": false,
+      "prefectureHunting": "https://www.ain.gouv.fr/Actions-de-l-Etat/Environnement-risques-naturels-et-technologiques/Chasse-Faune-sauvage/Arretes-relatifs-a-la-campagne-de-chasse-pour-la-saison-cynegetique-2026-2027",
+      "prefecture": "https://www.ain.gouv.fr/"
+    },
+    {
+      "code": "02",
+      "name": "Aisne",
+      "opening": "2026-09-20",
+      "closing": "2027-02-28",
+      "noHuntingDays": null,
+      "source": {
+        "url": "https://www.chasseurdefrance.com/wp-content/uploads/2026/08/FDC-02.pdf",
+        "kind": "copie-fnc"
+      },
+      "ocr": true,
+      "prefectureHunting": null,
+      "prefecture": "https://www.aisne.gouv.fr/"
+    },
+    {
+      "code": "03",
+      "name": "Allier",
+      "opening": "2026-09-20",
+      "closing": "2027-02-28",
+      "noHuntingDays": null,
+      "source": {
+        "url": "https://www.chasseurdefrance.com/wp-content/uploads/2026/06/FDC-03.pdf",
+        "kind": "copie-fnc"
+      },
+      "ocr": true,
+      "prefectureHunting": null,
+      "prefecture": "https://www.allier.gouv.fr/"
+    },
+    {
+      "code": "04",
+      "name": "Alpes-de-Haute-Provence",
+      "opening": "2026-09-13",
+      "closing": "2027-01-10",
+      "noHuntingDays": null,
+      "source": {
+        "url": "https://www.chasseurdefrance.com/wp-content/uploads/2026/07/FDC-04.pdf",
+        "kind": "copie-fnc"
+      },
+      "ocr": true,
+      "prefectureHunting": null,
+      "prefecture": "https://www.alpes-de-haute-provence.gouv.fr/"
+    },
+    {
+      "code": "05",
+      "name": "Hautes-Alpes",
+      "opening": "2026-09-13",
+      "closing": "2027-01-10",
+      "noHuntingDays": "Chasse interdite le vendredi pour toutes les espèces et en tous lieux ; autorisée les jours fériés sauf si le férié tombe un vendredi",
+      "source": {
+        "url": "https://www.chasseurdefrance.com/wp-content/uploads/2026/06/FDC-05.pdf",
+        "kind": "copie-fnc"
+      },
+      "ocr": false,
+      "prefectureHunting": null,
+      "prefecture": "https://www.hautes-alpes.gouv.fr/"
+    },
+    {
+      "code": "06",
+      "name": "Alpes-Maritimes",
+      "opening": null,
+      "closing": null,
+      "noHuntingDays": null,
+      "source": null,
+      "ocr": false,
+      "prefectureHunting": "https://www.alpes-maritimes.gouv.fr/Publications/consultation-du-public/Projets-d-arretes-prefectoraux-relatifs-a-la-campagne-cynegetique-2026-2027",
+      "prefecture": "https://www.alpes-maritimes.gouv.fr/"
+    },
+    {
+      "code": "07",
+      "name": "Ardèche",
+      "opening": "2026-09-13",
+      "closing": "2027-02-28",
+      "noHuntingDays": "Chasse interdite le mardi (sauf jour férié), sauf oiseaux de passage, gibier d’eau et étourneau sansonnet",
+      "source": {
+        "url": "https://www.chasseurdefrance.com/wp-content/uploads/2026/06/FDC-07.pdf",
+        "kind": "copie-fnc"
+      },
+      "ocr": true,
+      "prefectureHunting": null,
+      "prefecture": "https://www.ardeche.gouv.fr/"
+    },
+    {
+      "code": "08",
+      "name": "Ardennes",
+      "opening": null,
+      "closing": null,
+      "noHuntingDays": null,
+      "source": null,
+      "ocr": false,
+      "prefectureHunting": "https://www.ardennes.gouv.fr/Actions-de-l-Etat/Environnement/Chasse/Reglementation-et-consultations-du-public/Arrete-prefectoral-n-2026-325-du-22-mai-2026-dates-ouverture-et-cloture-de-la-chasse-en-2026-2027",
+      "prefecture": "https://www.ardennes.gouv.fr/"
+    },
+    {
+      "code": "09",
+      "name": "Ariège",
+      "opening": "2026-09-13",
+      "closing": "2027-02-28",
+      "noHuntingDays": null,
+      "source": {
+        "url": "https://www.chasseurdefrance.com/wp-content/uploads/2026/06/FDC-09.pdf",
+        "kind": "copie-fnc"
+      },
+      "ocr": false,
+      "prefectureHunting": null,
+      "prefecture": "https://www.ariege.gouv.fr/"
+    },
+    {
+      "code": "10",
+      "name": "Aube",
+      "opening": "2026-09-20",
+      "closing": "2027-02-28",
+      "noHuntingDays": null,
+      "source": {
+        "url": "https://www.chasseurdefrance.com/wp-content/uploads/2026/07/FDC-10.pdf",
+        "kind": "copie-fnc"
+      },
+      "ocr": true,
+      "prefectureHunting": null,
+      "prefecture": "https://www.aube.gouv.fr/"
+    },
+    {
+      "code": "11",
+      "name": "Aude",
+      "opening": "2026-09-13",
+      "closing": "2027-02-28",
+      "noHuntingDays": "Pour certaines espèces (tableau), chasse « tous les jours sauf mardi et vendredi » ; pas de suspension générale lue",
+      "source": {
+        "url": "https://www.chasseurdefrance.com/wp-content/uploads/2026/06/FDC-11.pdf",
+        "kind": "copie-fnc"
+      },
+      "ocr": true,
+      "prefectureHunting": null,
+      "prefecture": "https://www.aude.gouv.fr/"
+    },
+    {
+      "code": "12",
+      "name": "Aveyron",
+      "opening": "2026-09-13",
+      "closing": "2027-03-31",
+      "noHuntingDays": "Chasse à tir suspendue les mardis, jeudis et vendredis du 13 septembre 2026 au 31 mars 2027 (exceptions : fériés, grand gibier soumis à plan de chasse, gibier d’eau, etc.)",
+      "source": {
+        "url": "https://www.chasseurdefrance.com/wp-content/uploads/2026/07/FDC-12.pdf",
+        "kind": "copie-fnc"
+      },
+      "ocr": false,
+      "prefectureHunting": null,
+      "prefecture": "https://www.aveyron.gouv.fr/"
+    },
+    {
+      "code": "13",
+      "name": "Bouches-du-Rhône",
+      "opening": "2026-09-13",
+      "closing": "2027-02-28",
+      "noHuntingDays": null,
+      "source": {
+        "url": "https://www.chasseurdefrance.com/wp-content/uploads/2026/07/FDC-13.pdf",
+        "kind": "copie-fnc"
+      },
+      "ocr": false,
+      "prefectureHunting": null,
+      "prefecture": "https://www.bouches-du-rhone.gouv.fr/"
+    },
+    {
+      "code": "14",
+      "name": "Calvados",
+      "opening": "2026-09-20",
+      "closing": "2027-02-28",
+      "noHuntingDays": null,
+      "source": {
+        "url": "https://www.chasseurdefrance.com/wp-content/uploads/2026/07/FDC-14.pdf",
+        "kind": "copie-fnc"
+      },
+      "ocr": true,
+      "prefectureHunting": null,
+      "prefecture": "https://www.calvados.gouv.fr/"
+    },
+    {
+      "code": "15",
+      "name": "Cantal",
+      "opening": "2026-09-13",
+      "closing": "2027-02-28",
+      "noHuntingDays": "Chasse à tir de toutes les espèces interdite le vendredi (sauf vendredis fériés) ; gibier sédentaire hors plan de chasse seulement lundi ou jeudi, samedi, dimanche et jours fériés",
+      "source": {
+        "url": "https://www.chasseurdefrance.com/wp-content/uploads/2026/06/FDC-15.pdf",
+        "kind": "copie-fnc"
+      },
+      "ocr": false,
+      "prefectureHunting": null,
+      "prefecture": "https://www.cantal.gouv.fr/"
+    },
+    {
+      "code": "16",
+      "name": "Charente",
+      "opening": "2026-09-13",
+      "closing": "2027-02-28",
+      "noHuntingDays": null,
+      "source": {
+        "url": "https://www.chasseurdefrance.com/wp-content/uploads/2026/06/FDC-16.pdf",
+        "kind": "copie-fnc"
+      },
+      "ocr": true,
+      "prefectureHunting": null,
+      "prefecture": "https://www.charente.gouv.fr/"
+    },
+    {
+      "code": "17",
+      "name": "Charente-Maritime",
+      "opening": "2026-09-13",
+      "closing": "2027-02-28",
+      "noHuntingDays": null,
+      "source": {
+        "url": "https://www.chasseurdefrance.com/wp-content/uploads/2026/06/FDC-17.pdf",
+        "kind": "copie-fnc"
+      },
+      "ocr": true,
+      "prefectureHunting": null,
+      "prefecture": "https://www.charente-maritime.gouv.fr/"
+    },
+    {
+      "code": "18",
+      "name": "Cher",
+      "opening": "2026-09-27",
+      "closing": "2027-02-28",
+      "noHuntingDays": null,
+      "source": {
+        "url": "https://www.chasseurdefrance.com/wp-content/uploads/2026/06/FDC-18.pdf",
+        "kind": "copie-fnc"
+      },
+      "ocr": false,
+      "prefectureHunting": null,
+      "prefecture": "https://www.cher.gouv.fr/"
+    },
+    {
+      "code": "19",
+      "name": "Corrèze",
+      "opening": "2026-09-13",
+      "closing": "2027-02-28",
+      "noHuntingDays": "Chasse à tir suspendue les mardis et vendredis (sauf jours fériés), sauf colombidés, turdidés et alouette à poste fixe du 1er octobre au 15 novembre 2026",
+      "source": {
+        "url": "https://www.chasseurdefrance.com/wp-content/uploads/2026/06/FDC-19.pdf",
+        "kind": "copie-fnc"
+      },
+      "ocr": false,
+      "prefectureHunting": "https://www.correze.gouv.fr/Publications/Annonces-avis/Avis-et-Decisions-du-prefet-accord-accord-avec-reserves-refus-et-arretes-complementaires/CHASSE-arrete-prefectoral-relatif-a-l-ouverture-et-la-fermeture-de-la-chasse-2026-2027-en-Correze",
+      "prefecture": "https://www.correze.gouv.fr/"
+    },
+    {
+      "code": "2A",
+      "name": "Corse-du-Sud",
+      "opening": null,
+      "closing": null,
+      "noHuntingDays": null,
+      "source": null,
+      "ocr": false,
+      "prefectureHunting": null,
+      "prefecture": "https://www.corse-du-sud.gouv.fr/"
+    },
+    {
+      "code": "2B",
+      "name": "Haute-Corse",
+      "opening": null,
+      "closing": null,
+      "noHuntingDays": null,
+      "source": null,
+      "ocr": false,
+      "prefectureHunting": null,
+      "prefecture": "https://www.haute-corse.gouv.fr/"
+    },
+    {
+      "code": "21",
+      "name": "Côte-d’Or",
+      "opening": "2026-09-20",
+      "closing": "2027-02-28",
+      "noHuntingDays": null,
+      "source": {
+        "url": "https://www.chasseurdefrance.com/wp-content/uploads/2026/06/FDC-21.pdf",
+        "kind": "copie-fnc"
+      },
+      "ocr": false,
+      "prefectureHunting": "https://www.cote-dor.gouv.fr/Actions-de-l-Etat/Environnement/Chasse/Reglementation/Dates-d-ouverture-et-de-fermeture-de-la-chasse",
+      "prefecture": "https://www.cote-dor.gouv.fr/"
+    },
+    {
+      "code": "22",
+      "name": "Côtes-d’Armor",
+      "opening": "2026-09-20",
+      "closing": "2027-02-28",
+      "noHuntingDays": null,
+      "source": {
+        "url": "https://www.chasseurdefrance.com/wp-content/uploads/2026/08/FDC-22.pdf",
+        "kind": "copie-fnc"
+      },
+      "ocr": true,
+      "prefectureHunting": null,
+      "prefecture": "https://www.cotes-darmor.gouv.fr/"
+    },
+    {
+      "code": "23",
+      "name": "Creuse",
+      "opening": "2026-09-13",
+      "closing": "2027-02-28",
+      "noHuntingDays": null,
+      "source": {
+        "url": "https://www.chasseurdefrance.com/wp-content/uploads/2026/06/FDC-23.pdf",
+        "kind": "copie-fnc"
+      },
+      "ocr": false,
+      "prefectureHunting": null,
+      "prefecture": "https://www.creuse.gouv.fr/"
+    },
+    {
+      "code": "24",
+      "name": "Dordogne",
+      "opening": "2026-09-13",
+      "closing": "2027-02-28",
+      "noHuntingDays": "Jours de chasse restreints selon l’espèce (par exemple lapin de garenne : samedis, dimanches, lundis, mercredis et jours fériés) ; pas de suspension générale lue",
+      "source": {
+        "url": "https://www.dordogne.gouv.fr/contenu/telechargement/52862/409563/file/AP%20ouverture%20cloture%202026_2027%20sign%C3%A9.pdf",
+        "kind": "prefecture"
+      },
+      "ocr": false,
+      "prefectureHunting": "https://www.dordogne.gouv.fr/Actions-de-l-Etat/Environnement-Eau-Biodiversite-Risques/Gestion-des-espaces-naturels-et-des-especes-Chasse-et-Peche/Chasse/Saison-cynegetique-en-cours",
+      "prefecture": "https://www.dordogne.gouv.fr/"
+    },
+    {
+      "code": "25",
+      "name": "Doubs",
+      "opening": "2026-09-13",
+      "closing": "2027-02-28",
+      "noHuntingDays": "Chasse suspendue le vendredi (sauf jours fériés) pendant la période d’ouverture générale, hors poste fixe gibier d’eau et oiseaux de passage",
+      "source": {
+        "url": "https://www.doubs.gouv.fr/contenu/telechargement/46519/309898/file/260522_arrete_ouverture_cloture_chasse_2026-2027_sign%C3%A9.pdf",
+        "kind": "prefecture"
+      },
+      "ocr": false,
+      "prefectureHunting": "https://www.doubs.gouv.fr/Publications/Publications-Legales/Participation-du-Public-aux-decisions-en-matiere-d-environnement/Projet-d-arrete-fixant-l-ouverture-et-la-cloture-de-la-chasse-pour-la-campagne-2026-2027",
+      "prefecture": "https://www.doubs.gouv.fr/"
+    },
+    {
+      "code": "26",
+      "name": "Drôme",
+      "opening": null,
+      "closing": null,
+      "noHuntingDays": null,
+      "source": null,
+      "ocr": false,
+      "prefectureHunting": "https://www.drome.gouv.fr/Actions-de-l-Etat/Environnement-eau-risques-naturels-et-technologiques/Environnement-eau/Espaces-naturels/La-Chasse/Reglementation/Modalites-d-exercice-de-la-chasse-dates-d-ouverture-fermeture/Arrete-prefectoral-annuel-d-ouverture-fermeture-de-la-chasse-en-Drome",
+      "prefecture": "https://www.drome.gouv.fr/"
+    },
+    {
+      "code": "27",
+      "name": "Eure",
+      "opening": "2026-09-27",
+      "closing": "2027-02-28",
+      "noHuntingDays": null,
+      "source": {
+        "url": "https://www.chasseurdefrance.com/wp-content/uploads/2026/08/FDC-27.pdf",
+        "kind": "copie-fnc"
+      },
+      "ocr": false,
+      "prefectureHunting": null,
+      "prefecture": "https://www.eure.gouv.fr/"
+    },
+    {
+      "code": "28",
+      "name": "Eure-et-Loir",
+      "opening": "2026-09-27",
+      "closing": "2027-02-28",
+      "noHuntingDays": null,
+      "source": {
+        "url": "https://www.chasseurdefrance.com/wp-content/uploads/2026/06/FDC-28.pdf",
+        "kind": "copie-fnc"
+      },
+      "ocr": false,
+      "prefectureHunting": null,
+      "prefecture": "https://www.eure-et-loir.gouv.fr/"
+    },
+    {
+      "code": "29",
+      "name": "Finistère",
+      "opening": null,
+      "closing": null,
+      "noHuntingDays": null,
+      "source": null,
+      "ocr": false,
+      "prefectureHunting": null,
+      "prefecture": "https://www.finistere.gouv.fr/"
+    },
+    {
+      "code": "30",
+      "name": "Gard",
+      "opening": "2026-09-13",
+      "closing": "2027-02-28",
+      "noHuntingDays": "Chasse du sanglier en battue interdite le mardi et le vendredi (sauf jours fériés) ; pas d’interdiction générale lue",
+      "source": {
+        "url": "https://www.chasseurdefrance.com/wp-content/uploads/2026/06/FDC-30.pdf",
+        "kind": "copie-fnc"
+      },
+      "ocr": false,
+      "prefectureHunting": null,
+      "prefecture": "https://www.gard.gouv.fr/"
+    },
+    {
+      "code": "31",
+      "name": "Haute-Garonne",
+      "opening": "2026-09-13",
+      "closing": "2027-02-28",
+      "noHuntingDays": "Chasse à tir suspendue les mardis et vendredis pour les gibiers sédentaires hors plan de chasse, sanglier et renard (sauf jours fériés)",
+      "source": {
+        "url": "https://www.chasseurdefrance.com/wp-content/uploads/2026/07/FDC-31.pdf",
+        "kind": "copie-fnc"
+      },
+      "ocr": true,
+      "prefectureHunting": null,
+      "prefecture": "https://www.haute-garonne.gouv.fr/"
+    },
+    {
+      "code": "32",
+      "name": "Gers",
+      "opening": null,
+      "closing": null,
+      "noHuntingDays": null,
+      "source": null,
+      "ocr": false,
+      "prefectureHunting": null,
+      "prefecture": "https://www.gers.gouv.fr/"
+    },
+    {
+      "code": "33",
+      "name": "Gironde",
+      "opening": "2026-09-13",
+      "closing": "2027-02-28",
+      "noHuntingDays": null,
+      "source": {
+        "url": "https://www.chasseurdefrance.com/wp-content/uploads/2026/07/FDC-33.pdf",
+        "kind": "copie-fnc"
+      },
+      "ocr": true,
+      "prefectureHunting": null,
+      "prefecture": "https://www.gironde.gouv.fr/"
+    },
+    {
+      "code": "34",
+      "name": "Hérault",
+      "opening": "2026-09-13",
+      "closing": "2027-02-28",
+      "noHuntingDays": null,
+      "source": {
+        "url": "https://www.chasseurdefrance.com/wp-content/uploads/2026/06/FDC-34.pdf",
+        "kind": "copie-fnc"
+      },
+      "ocr": true,
+      "prefectureHunting": null,
+      "prefecture": "https://www.herault.gouv.fr/"
+    },
+    {
+      "code": "35",
+      "name": "Ille-et-Vilaine",
+      "opening": "2026-09-20",
+      "closing": "2027-02-28",
+      "noHuntingDays": null,
+      "source": {
+        "url": "https://www.chasseurdefrance.com/wp-content/uploads/2026/06/FDC-35.pdf",
+        "kind": "copie-fnc"
+      },
+      "ocr": false,
+      "prefectureHunting": null,
+      "prefecture": "https://www.ille-et-vilaine.gouv.fr/"
+    },
+    {
+      "code": "36",
+      "name": "Indre",
+      "opening": "2026-09-27",
+      "closing": "2027-02-28",
+      "noHuntingDays": null,
+      "source": {
+        "url": "https://www.chasseurdefrance.com/wp-content/uploads/2026/06/FDC-36.pdf",
+        "kind": "copie-fnc"
+      },
+      "ocr": false,
+      "prefectureHunting": null,
+      "prefecture": "https://www.indre.gouv.fr/"
+    },
+    {
+      "code": "37",
+      "name": "Indre-et-Loire",
+      "opening": "2026-09-20",
+      "closing": "2027-02-28",
+      "noHuntingDays": null,
+      "source": {
+        "url": "https://www.chasseurdefrance.com/wp-content/uploads/2026/06/FDC-37.pdf",
+        "kind": "copie-fnc"
+      },
+      "ocr": true,
+      "prefectureHunting": null,
+      "prefecture": "https://www.indre-et-loire.gouv.fr/"
+    },
+    {
+      "code": "38",
+      "name": "Isère",
+      "opening": "2026-09-13",
+      "closing": "2027-02-28",
+      "noHuntingDays": "Chasse de toutes les espèces interdite le vendredi pendant toute la période de chasse, y compris les vendredis fériés",
+      "source": {
+        "url": "https://www.chasseurdefrance.com/wp-content/uploads/2026/08/FDC-38.pdf",
+        "kind": "copie-fnc"
+      },
+      "ocr": false,
+      "prefectureHunting": "https://www.isere.gouv.fr/Actions-de-l-Etat/Environnement/Chasse-Regulation/La-chasse/AP-n-38-2026-06-23-00014-relatif-a-l-ouverture-et-la-cloture-de-la-chasse-saison-2026-2027",
+      "prefecture": "https://www.isere.gouv.fr/"
+    },
+    {
+      "code": "39",
+      "name": "Jura",
+      "opening": "2026-09-13",
+      "closing": "2027-02-28",
+      "noHuntingDays": "Chasse à tir interdite le mardi (sauf férié) ; chiens interdits le jeudi et le vendredi pour la chasse à tir (sauf férié, hors affût gibier d’eau)",
+      "source": {
+        "url": "https://www.jura.gouv.fr/index.php/contenu/telechargement/36609/272505/file/AP%20ouverture%20cl%C3%B4ture%20chasse%202026-2027.pdf",
+        "kind": "prefecture"
+      },
+      "ocr": false,
+      "prefectureHunting": "https://www.jura.gouv.fr/index.php/Actions-de-l-Etat/Environnement/Chasse-et-regulation/Campagne-de-chasse/Arrete-d-ouverture-cloture-de-la-chasse-campagne-2026-2027",
+      "prefecture": "https://www.jura.gouv.fr/"
+    },
+    {
+      "code": "40",
+      "name": "Landes",
+      "opening": "2026-09-13",
+      "closing": "2027-02-28",
+      "noHuntingDays": null,
+      "source": {
+        "url": "https://www.chasseurdefrance.com/wp-content/uploads/2026/06/FDC-40.pdf",
+        "kind": "copie-fnc"
+      },
+      "ocr": false,
+      "prefectureHunting": null,
+      "prefecture": "https://www.landes.gouv.fr/"
+    },
+    {
+      "code": "41",
+      "name": "Loir-et-Cher",
+      "opening": null,
+      "closing": null,
+      "noHuntingDays": null,
+      "source": null,
+      "ocr": false,
+      "prefectureHunting": null,
+      "prefecture": "https://www.loir-et-cher.gouv.fr/"
+    },
+    {
+      "code": "42",
+      "name": "Loire",
+      "opening": "2026-09-13",
+      "closing": "2027-02-28",
+      "noHuntingDays": "Jours de chasse restreints pour certaines espèces (lapin de garenne, faisan, perdrix) ; pas de suspension générale lue",
+      "source": {
+        "url": "https://www.chasseurdefrance.com/wp-content/uploads/2026/06/FDC-42.pdf",
+        "kind": "copie-fnc"
+      },
+      "ocr": false,
+      "prefectureHunting": null,
+      "prefecture": "https://www.loire.gouv.fr/"
+    },
+    {
+      "code": "43",
+      "name": "Haute-Loire",
+      "opening": "2026-09-13",
+      "closing": "2027-02-28",
+      "noHuntingDays": "Chasse au gibier sédentaire et à la bécasse suspendue les mardis et vendredis (sauf fériés) ; approche et affût interdits ces jours-là",
+      "source": {
+        "url": "https://www.chasseurdefrance.com/wp-content/uploads/2026/07/FDC-43.pdf",
+        "kind": "copie-fnc"
+      },
+      "ocr": false,
+      "prefectureHunting": "https://www.haute-loire.gouv.fr/Publications/Consultation-du-public/Ouverture-et-cloture-de-la-chasse-pour-la-campagne-2026-2027",
+      "prefecture": "https://www.haute-loire.gouv.fr/"
+    },
+    {
+      "code": "44",
+      "name": "Loire-Atlantique",
+      "opening": "2026-09-20",
+      "closing": "2027-02-28",
+      "noHuntingDays": null,
+      "source": {
+        "url": "https://www.chasseurdefrance.com/wp-content/uploads/2026/08/FDC-44.pdf",
+        "kind": "copie-fnc"
+      },
+      "ocr": true,
+      "prefectureHunting": null,
+      "prefecture": "https://www.loire-atlantique.gouv.fr/"
+    },
+    {
+      "code": "45",
+      "name": "Loiret",
+      "opening": "2026-09-20",
+      "closing": "2027-02-28",
+      "noHuntingDays": null,
+      "source": {
+        "url": "https://www.chasseurdefrance.com/wp-content/uploads/2026/06/FDC-45.pdf",
+        "kind": "copie-fnc"
+      },
+      "ocr": false,
+      "prefectureHunting": null,
+      "prefecture": "https://www.loiret.gouv.fr/"
+    },
+    {
+      "code": "46",
+      "name": "Lot",
+      "opening": "2026-09-13",
+      "closing": "2027-02-28",
+      "noHuntingDays": "Chasse à tir suspendue trois jours par semaine (mardi, jeudi, vendredi) hors jours fériés, avec exceptions (plan de chasse, gibier d’eau, nuisibles...)",
+      "source": {
+        "url": "https://www.chasseurdefrance.com/wp-content/uploads/2026/06/FDC-46.pdf",
+        "kind": "copie-fnc"
+      },
+      "ocr": true,
+      "prefectureHunting": null,
+      "prefecture": "https://www.lot.gouv.fr/"
+    },
+    {
+      "code": "47",
+      "name": "Lot-et-Garonne",
+      "opening": "2026-09-13",
+      "closing": "2027-02-28",
+      "noHuntingDays": null,
+      "source": {
+        "url": "https://www.chasseurdefrance.com/wp-content/uploads/2026/07/FDC-47.pdf",
+        "kind": "copie-fnc"
+      },
+      "ocr": false,
+      "prefectureHunting": null,
+      "prefecture": "https://www.lot-et-garonne.gouv.fr/"
+    },
+    {
+      "code": "48",
+      "name": "Lozère",
+      "opening": "2026-09-13",
+      "closing": "2027-02-28",
+      "noHuntingDays": "Chasse suspendue les mardi, jeudi et vendredi de chaque semaine (sauf jours fériés et dérogations de l’article 5.2)",
+      "source": {
+        "url": "https://www.lozere.gouv.fr/contenu/telechargement/34829/293520/file/arrete_chasse_2026.pdf",
+        "kind": "prefecture"
+      },
+      "ocr": false,
+      "prefectureHunting": "https://www.lozere.gouv.fr/Actions-de-l-Etat/Environnement-Risques-naturels-et-technologiques/Consultation-du-public/Projet-d-arrete-exercice-de-la-chasse-en-Lozere-pour-la-saison-cynegetique-2026-2027",
+      "prefecture": "https://www.lozere.gouv.fr/"
+    },
+    {
+      "code": "49",
+      "name": "Maine-et-Loire",
+      "opening": null,
+      "closing": null,
+      "noHuntingDays": null,
+      "source": null,
+      "ocr": false,
+      "prefectureHunting": null,
+      "prefecture": "https://www.maine-et-loire.gouv.fr/"
+    },
+    {
+      "code": "50",
+      "name": "Manche",
+      "opening": "2026-09-27",
+      "closing": null,
+      "noHuntingDays": null,
+      "source": {
+        "url": "https://www.chasseurdefrance.com/wp-content/uploads/2026/08/FDC-50.pdf",
+        "kind": "copie-fnc"
+      },
+      "ocr": true,
+      "prefectureHunting": null,
+      "prefecture": "https://www.manche.gouv.fr/"
+    },
+    {
+      "code": "51",
+      "name": "Marne",
+      "opening": "2026-09-20",
+      "closing": "2027-02-28",
+      "noHuntingDays": null,
+      "source": {
+        "url": "https://www.chasseurdefrance.com/wp-content/uploads/2026/07/FDC-51.pdf",
+        "kind": "copie-fnc"
+      },
+      "ocr": true,
+      "prefectureHunting": null,
+      "prefecture": "https://www.marne.gouv.fr/"
+    },
+    {
+      "code": "52",
+      "name": "Haute-Marne",
+      "opening": "2026-09-20",
+      "closing": "2027-02-28",
+      "noHuntingDays": "Chasse interdite le mercredi, tous modes et toutes espèces chassables (motif : sécurité des enfants d’âge scolaire)",
+      "source": {
+        "url": "https://www.chasseurdefrance.com/wp-content/uploads/2026/06/FDC-52.pdf",
+        "kind": "copie-fnc"
+      },
+      "ocr": false,
+      "prefectureHunting": null,
+      "prefecture": "https://www.haute-marne.gouv.fr/"
+    },
+    {
+      "code": "53",
+      "name": "Mayenne",
+      "opening": "2026-09-20",
+      "closing": "2027-02-28",
+      "noHuntingDays": null,
+      "source": {
+        "url": "https://www.chasseurdefrance.com/wp-content/uploads/2026/06/FDC-53.pdf",
+        "kind": "copie-fnc"
+      },
+      "ocr": false,
+      "prefectureHunting": null,
+      "prefecture": "https://www.mayenne.gouv.fr/"
+    },
+    {
+      "code": "54",
+      "name": "Meurthe-et-Moselle",
+      "opening": "2026-09-20",
+      "closing": "2027-02-28",
+      "noHuntingDays": null,
+      "source": {
+        "url": "https://www.chasseurdefrance.com/wp-content/uploads/2026/07/FDC-54.pdf",
+        "kind": "copie-fnc"
+      },
+      "ocr": true,
+      "prefectureHunting": null,
+      "prefecture": "https://www.meurthe-et-moselle.gouv.fr/"
+    },
+    {
+      "code": "55",
+      "name": "Meuse",
+      "opening": null,
+      "closing": null,
+      "noHuntingDays": null,
+      "source": null,
+      "ocr": false,
+      "prefectureHunting": "https://www.meuse.gouv.fr/Actions-de-l-Etat/Environnement/Chasse/Campagne-cynegetique/CAMPAGNE-DE-CHASSE-2026-2027",
+      "prefecture": "https://www.meuse.gouv.fr/"
+    },
+    {
+      "code": "56",
+      "name": "Morbihan",
+      "opening": "2026-09-20",
+      "closing": "2027-02-28",
+      "noHuntingDays": "Chasse à tir interdite les mardis et vendredis pendant l’ouverture générale (sauf jours fériés), hors gibier d’eau, chasse à courre et sanglier",
+      "source": {
+        "url": "https://www.chasseurdefrance.com/wp-content/uploads/2026/08/FDC-56.pdf",
+        "kind": "copie-fnc"
+      },
+      "ocr": false,
+      "prefectureHunting": null,
+      "prefecture": "https://www.morbihan.gouv.fr/"
+    },
+    {
+      "code": "57",
+      "name": "Moselle",
+      "opening": "2026-08-23",
+      "closing": "2027-02-01",
+      "noHuntingDays": null,
+      "source": {
+        "url": "https://www.chasseurdefrance.com/wp-content/uploads/2026/07/FDC-57.pdf",
+        "kind": "copie-fnc"
+      },
+      "ocr": true,
+      "prefectureHunting": null,
+      "prefecture": "https://www.moselle.gouv.fr/"
+    },
+    {
+      "code": "58",
+      "name": "Nièvre",
+      "opening": "2026-09-20",
+      "closing": "2027-02-28",
+      "noHuntingDays": null,
+      "source": {
+        "url": "https://www.chasseurdefrance.com/wp-content/uploads/2026/06/FDC-58.pdf",
+        "kind": "copie-fnc"
+      },
+      "ocr": false,
+      "prefectureHunting": null,
+      "prefecture": "https://www.nievre.gouv.fr/"
+    },
+    {
+      "code": "59",
+      "name": "Nord",
+      "opening": "2026-09-20",
+      "closing": "2027-02-28",
+      "noHuntingDays": null,
+      "source": {
+        "url": "https://www.chasseurdefrance.com/wp-content/uploads/2026/07/FDC-59.pdf",
+        "kind": "copie-fnc"
+      },
+      "ocr": true,
+      "prefectureHunting": null,
+      "prefecture": "https://www.nord.gouv.fr/"
+    },
+    {
+      "code": "60",
+      "name": "Oise",
+      "opening": "2026-09-20",
+      "closing": "2027-02-28",
+      "noHuntingDays": null,
+      "source": {
+        "url": "https://www.chasseurdefrance.com/wp-content/uploads/2026/06/FDC-60.pdf",
+        "kind": "copie-fnc"
+      },
+      "ocr": true,
+      "prefectureHunting": null,
+      "prefecture": "https://www.oise.gouv.fr/"
+    },
+    {
+      "code": "61",
+      "name": "Orne",
+      "opening": "2026-09-20",
+      "closing": "2027-02-28",
+      "noHuntingDays": null,
+      "source": {
+        "url": "https://www.chasseurdefrance.com/wp-content/uploads/2026/08/FDC-61.pdf",
+        "kind": "copie-fnc"
+      },
+      "ocr": false,
+      "prefectureHunting": null,
+      "prefecture": "https://www.orne.gouv.fr/"
+    },
+    {
+      "code": "62",
+      "name": "Pas-de-Calais",
+      "opening": "2026-09-20",
+      "closing": "2027-02-28",
+      "noHuntingDays": null,
+      "source": {
+        "url": "https://www.chasseurdefrance.com/wp-content/uploads/2026/08/FDC-62.pdf",
+        "kind": "copie-fnc"
+      },
+      "ocr": false,
+      "prefectureHunting": null,
+      "prefecture": "https://www.pas-de-calais.gouv.fr/"
+    },
+    {
+      "code": "63",
+      "name": "Puy-de-Dôme",
+      "opening": "2026-09-13",
+      "closing": "2027-02-28",
+      "noHuntingDays": null,
+      "source": {
+        "url": "https://www.chasseurdefrance.com/wp-content/uploads/2026/06/FDC-63.pdf",
+        "kind": "copie-fnc"
+      },
+      "ocr": true,
+      "prefectureHunting": "https://www.puy-de-dome.gouv.fr/Actions-de-l-Etat/Environnement-eau-prevention-des-risques-energie/La-chasse/Saison-de-chasse-en-cours-les-arretes/AP-SDGC-ouverture-cloture-chevreuil-mini-maxi-blaireau-faisan-oiseaux-passage-gibier-d-eau-22LR",
+      "prefecture": "https://www.puy-de-dome.gouv.fr/"
+    },
+    {
+      "code": "64",
+      "name": "Pyrénées-Atlantiques",
+      "opening": null,
+      "closing": null,
+      "noHuntingDays": null,
+      "source": null,
+      "ocr": false,
+      "prefectureHunting": "https://www.pyrenees-atlantiques.gouv.fr/Publications/Consultation-du-public/Arretes-prefectoraux-reglementant-la-campagne-cynegetique-2026-2027",
+      "prefecture": "https://www.pyrenees-atlantiques.gouv.fr/"
+    },
+    {
+      "code": "65",
+      "name": "Hautes-Pyrénées",
+      "opening": "2026-09-13",
+      "closing": "2027-02-28",
+      "noHuntingDays": null,
+      "source": {
+        "url": "https://www.hautes-pyrenees.gouv.fr/contenu/telechargement/23961/170071/file/arrete_chasse_2026_2027.pdf",
+        "kind": "prefecture"
+      },
+      "ocr": false,
+      "prefectureHunting": "https://www.hautes-pyrenees.gouv.fr/Actions-de-l-Etat/Environnement-et-risques-majeurs/Chasse-faune-sauvage-et-louveterie/Chasse/Reglementation-dans-le-departement-des-Hautes-Pyrenees/Arretes-prefectoraux-campagne-2026-2027",
+      "prefecture": "https://www.hautes-pyrenees.gouv.fr/"
+    },
+    {
+      "code": "66",
+      "name": "Pyrénées-Orientales",
+      "opening": "2026-09-13",
+      "closing": "2027-02-28",
+      "noHuntingDays": null,
+      "source": {
+        "url": "https://www.chasseurdefrance.com/wp-content/uploads/2026/06/FDC-66.pdf",
+        "kind": "copie-fnc"
+      },
+      "ocr": true,
+      "prefectureHunting": null,
+      "prefecture": "https://www.pyrenees-orientales.gouv.fr/"
+    },
+    {
+      "code": "67",
+      "name": "Bas-Rhin",
+      "opening": "2026-08-23",
+      "closing": "2027-02-01",
+      "noHuntingDays": null,
+      "source": {
+        "url": "https://www.bas-rhin.gouv.fr/contenu/telechargement/61046/435837/file/AP_P%C3%A9riode_Chasse_2026-2027.pdf",
+        "kind": "prefecture"
+      },
+      "ocr": false,
+      "prefectureHunting": "https://www.bas-rhin.gouv.fr/Actions-de-l-Etat/Environnement/Chasse-peche/Chasse/Arretes-Prefectoraux",
+      "prefecture": "https://www.bas-rhin.gouv.fr/"
+    },
+    {
+      "code": "68",
+      "name": "Haut-Rhin",
+      "opening": null,
+      "closing": null,
+      "noHuntingDays": null,
+      "source": null,
+      "ocr": false,
+      "prefectureHunting": "https://www.haut-rhin.gouv.fr/Actualites/Consultation-du-public/Projet-AP-fixant-les-dates-d-ouverture-et-de-fermeture-de-la-chasse-dans-le-Haut-Rhin-saison-2026-27",
+      "prefecture": "https://www.haut-rhin.gouv.fr/"
+    },
+    {
+      "code": "69",
+      "name": "Rhône",
+      "opening": "2026-09-13",
+      "closing": "2027-02-28",
+      "noHuntingDays": "Chasse à tir suspendue deux jours par semaine, le mardi et le vendredi, de l’ouverture à la clôture générale (sauf jours fériés)",
+      "source": {
+        "url": "https://www.chasseurdefrance.com/wp-content/uploads/2026/06/FDC-69.pdf",
+        "kind": "copie-fnc"
+      },
+      "ocr": true,
+      "prefectureHunting": null,
+      "prefecture": null
+    },
+    {
+      "code": "70",
+      "name": "Haute-Saône",
+      "opening": "2026-09-13",
+      "closing": "2027-02-28",
+      "noHuntingDays": null,
+      "source": {
+        "url": "https://www.chasseurdefrance.com/wp-content/uploads/2026/06/FDC-70.pdf",
+        "kind": "copie-fnc"
+      },
+      "ocr": false,
+      "prefectureHunting": null,
+      "prefecture": null
+    },
+    {
+      "code": "71",
+      "name": "Saône-et-Loire",
+      "opening": "2026-09-20",
+      "closing": "2027-02-28",
+      "noHuntingDays": null,
+      "source": {
+        "url": "https://www.chasseurdefrance.com/wp-content/uploads/2026/06/FDC-71.pdf",
+        "kind": "copie-fnc"
+      },
+      "ocr": true,
+      "prefectureHunting": null,
+      "prefecture": null
+    },
+    {
+      "code": "72",
+      "name": "Sarthe",
+      "opening": null,
+      "closing": null,
+      "noHuntingDays": null,
+      "source": null,
+      "ocr": false,
+      "prefectureHunting": null,
+      "prefecture": null
+    },
+    {
+      "code": "73",
+      "name": "Savoie",
+      "opening": "2026-09-13",
+      "closing": "2027-01-31",
+      "noHuntingDays": "Chasse à tir interdite les mardi et vendredi (sauf jours fériés) pendant la campagne 2026-2027 (article 7)",
+      "source": {
+        "url": "https://www.savoie.gouv.fr/contenu/telechargement/54879/434834/file/APsigne_2026_0785+ouverture+cloture+chasse+2026_2027.pdf",
+        "kind": "prefecture"
+      },
+      "ocr": false,
+      "prefectureHunting": "https://www.savoie.gouv.fr/Actions-de-l-Etat/Paysages-environnement-risques-naturels-et-technologiques/Environnement/Chasse-et-peche/Projet-d-Arrete-prefectoral-ouverture-cloture-pour-la-saison-2026-2027",
+      "prefecture": "https://www.savoie.gouv.fr/"
+    },
+    {
+      "code": "74",
+      "name": "Haute-Savoie",
+      "opening": "2026-09-13",
+      "closing": "2027-01-17",
+      "noHuntingDays": "Chasse à tir et au vol interdites le mercredi et le vendredi de chaque semaine (sauf jours fériés)",
+      "source": {
+        "url": "https://www.chasseurdefrance.com/wp-content/uploads/2026/06/FDC-74.pdf",
+        "kind": "copie-fnc"
+      },
+      "ocr": false,
+      "prefectureHunting": "https://www.haute-savoie.gouv.fr/Actions-de-l-Etat/Vos-loisirs/Chasse/Organisation/Ouverture-generale-de-la-chasse",
+      "prefecture": "https://www.haute-savoie.gouv.fr/"
+    },
+    {
+      "code": "75",
+      "name": "Paris",
+      "opening": null,
+      "closing": null,
+      "noHuntingDays": null,
+      "source": null,
+      "ocr": false,
+      "prefectureHunting": null,
+      "prefecture": null
+    },
+    {
+      "code": "76",
+      "name": "Seine-Maritime",
+      "opening": "2026-09-20",
+      "closing": "2027-02-28",
+      "noHuntingDays": null,
+      "source": {
+        "url": "https://www.chasseurdefrance.com/wp-content/uploads/2026/07/FDC-76.pdf",
+        "kind": "copie-fnc"
+      },
+      "ocr": true,
+      "prefectureHunting": null,
+      "prefecture": null
+    },
+    {
+      "code": "77",
+      "name": "Seine-et-Marne",
+      "opening": "2026-09-20",
+      "closing": "2027-02-28",
+      "noHuntingDays": null,
+      "source": {
+        "url": "https://www.chasseurdefrance.com/wp-content/uploads/2026/06/FDC-77.pdf",
+        "kind": "copie-fnc"
+      },
+      "ocr": true,
+      "prefectureHunting": null,
+      "prefecture": null
+    },
+    {
+      "code": "78",
+      "name": "Yvelines",
+      "opening": "2026-09-20",
+      "closing": "2027-02-28",
+      "noHuntingDays": null,
+      "source": {
+        "url": "https://www.chasseurdefrance.com/wp-content/uploads/2026/06/FDC-78.pdf",
+        "kind": "copie-fnc"
+      },
+      "ocr": false,
+      "prefectureHunting": null,
+      "prefecture": null
+    },
+    {
+      "code": "79",
+      "name": "Deux-Sèvres",
+      "opening": null,
+      "closing": null,
+      "noHuntingDays": null,
+      "source": null,
+      "ocr": false,
+      "prefectureHunting": "https://www.deux-sevres.gouv.fr/Actions-de-l-Etat/Environnement-eau-risques-naturels-et-technologiques/Biodiversite-chasse-foret-et-haies/Chasse/Arrete-prefectoral-ouverture-cloture-de-la-chasse-pour-la-campagne-2026-2027",
+      "prefecture": "https://www.deux-sevres.gouv.fr/"
+    },
+    {
+      "code": "80",
+      "name": "Somme",
+      "opening": "2026-09-20",
+      "closing": "2027-02-28",
+      "noHuntingDays": null,
+      "source": {
+        "url": "https://www.chasseurdefrance.com/wp-content/uploads/2026/08/FDC-80.pdf",
+        "kind": "copie-fnc"
+      },
+      "ocr": true,
+      "prefectureHunting": null,
+      "prefecture": null
+    },
+    {
+      "code": "81",
+      "name": "Tarn",
+      "opening": "2026-09-13",
+      "closing": "2027-02-28",
+      "noHuntingDays": "Pour la période jusqu’au 31 octobre 2026, la chasse est suspendue cinq jours par semaine (lundi, mardi, jeudi, vendredi, samedi) avec des exceptions (lièvre mercredi, dimanche et fériés, sanglier, nuisibles)",
+      "source": {
+        "url": "https://www.chasseurdefrance.com/wp-content/uploads/2026/07/FDC-81.pdf",
+        "kind": "copie-fnc"
+      },
+      "ocr": true,
+      "prefectureHunting": null,
+      "prefecture": null
+    },
+    {
+      "code": "82",
+      "name": "Tarn-et-Garonne",
+      "opening": "2026-09-13",
+      "closing": "2027-02-28",
+      "noHuntingDays": null,
+      "source": {
+        "url": "https://www.chasseurdefrance.com/wp-content/uploads/2026/06/FDC-82.pdf",
+        "kind": "copie-fnc"
+      },
+      "ocr": false,
+      "prefectureHunting": null,
+      "prefecture": null
+    },
+    {
+      "code": "83",
+      "name": "Var",
+      "opening": null,
+      "closing": null,
+      "noHuntingDays": null,
+      "source": null,
+      "ocr": false,
+      "prefectureHunting": null,
+      "prefecture": null
+    },
+    {
+      "code": "84",
+      "name": "Vaucluse",
+      "opening": "2026-09-13",
+      "closing": "2027-02-28",
+      "noHuntingDays": null,
+      "source": {
+        "url": "https://www.chasseurdefrance.com/wp-content/uploads/2026/06/FDC-84.pdf",
+        "kind": "copie-fnc"
+      },
+      "ocr": true,
+      "prefectureHunting": null,
+      "prefecture": null
+    },
+    {
+      "code": "85",
+      "name": "Vendée",
+      "opening": "2026-09-20",
+      "closing": "2027-02-28",
+      "noHuntingDays": "Chasse à tir du petit gibier sédentaire (lapin, lièvre, perdrix, faisan) et de la bécasse suspendue chaque mardi (sauf jours fériés)",
+      "source": {
+        "url": "https://www.chasseurdefrance.com/wp-content/uploads/2026/06/FDC-85.pdf",
+        "kind": "copie-fnc"
+      },
+      "ocr": true,
+      "prefectureHunting": null,
+      "prefecture": null
+    },
+    {
+      "code": "86",
+      "name": "Vienne",
+      "opening": "2026-09-13",
+      "closing": "2027-02-28",
+      "noHuntingDays": null,
+      "source": {
+        "url": "https://www.chasseurdefrance.com/wp-content/uploads/2026/06/FDC-86.pdf",
+        "kind": "copie-fnc"
+      },
+      "ocr": false,
+      "prefectureHunting": null,
+      "prefecture": null
+    },
+    {
+      "code": "87",
+      "name": "Haute-Vienne",
+      "opening": "2026-09-13",
+      "closing": "2027-02-28",
+      "noHuntingDays": null,
+      "source": {
+        "url": "https://www.chasseurdefrance.com/wp-content/uploads/2026/06/FDC-87.pdf",
+        "kind": "copie-fnc"
+      },
+      "ocr": true,
+      "prefectureHunting": "https://www.haute-vienne.gouv.fr/Publications/Consultation-du-public/Consultations-en-cours/Arrete-fixant-l-ouverture-cloture-et-les-modalites-de-la-chasse-Campagne-2026-2027-Haute-Vienne",
+      "prefecture": "https://www.haute-vienne.gouv.fr/"
+    },
+    {
+      "code": "88",
+      "name": "Vosges",
+      "opening": "2026-09-20",
+      "closing": "2027-02-28",
+      "noHuntingDays": null,
+      "source": {
+        "url": "https://www.vosges.gouv.fr/contenu/telechargement/32165/252040/file/AP_149_2026_planchasse_ouvert_fermeture.pdf",
+        "kind": "prefecture"
+      },
+      "ocr": true,
+      "prefectureHunting": "https://www.vosges.gouv.fr/Actions-de-l-Etat/Environnement/Chasse-peche/Chasse/Chasse-Campagne-2026-2027",
+      "prefecture": "https://www.vosges.gouv.fr/"
+    },
+    {
+      "code": "89",
+      "name": "Yonne",
+      "opening": "2026-09-20",
+      "closing": "2027-02-28",
+      "noHuntingDays": null,
+      "source": {
+        "url": "https://www.chasseurdefrance.com/wp-content/uploads/2026/06/FDC-89.pdf",
+        "kind": "copie-fnc"
+      },
+      "ocr": true,
+      "prefectureHunting": null,
+      "prefecture": null
+    },
+    {
+      "code": "90",
+      "name": "Territoire de Belfort",
+      "opening": "2026-09-13",
+      "closing": "2027-02-28",
+      "noHuntingDays": null,
+      "source": {
+        "url": "https://www.chasseurdefrance.com/wp-content/uploads/2026/06/FDC-90.pdf",
+        "kind": "copie-fnc"
+      },
+      "ocr": true,
+      "prefectureHunting": null,
+      "prefecture": null
+    },
+    {
+      "code": "91",
+      "name": "Essonne",
+      "opening": "2026-09-20",
+      "closing": "2027-02-28",
+      "noHuntingDays": null,
+      "source": {
+        "url": "https://www.chasseurdefrance.com/wp-content/uploads/2026/06/FDC-91.pdf",
+        "kind": "copie-fnc"
+      },
+      "ocr": false,
+      "prefectureHunting": null,
+      "prefecture": null
+    },
+    {
+      "code": "92",
+      "name": "Hauts-de-Seine",
+      "opening": "2026-09-20",
+      "closing": "2027-02-28",
+      "noHuntingDays": null,
+      "source": {
+        "url": "https://www.chasseurdefrance.com/wp-content/uploads/2026/06/FDC-92.pdf",
+        "kind": "copie-fnc"
+      },
+      "ocr": false,
+      "prefectureHunting": null,
+      "prefecture": null
+    },
+    {
+      "code": "93",
+      "name": "Seine-Saint-Denis",
+      "opening": "2026-09-20",
+      "closing": "2027-02-28",
+      "noHuntingDays": null,
+      "source": {
+        "url": "https://www.chasseurdefrance.com/wp-content/uploads/2026/06/FDC-93.pdf",
+        "kind": "copie-fnc"
+      },
+      "ocr": false,
+      "prefectureHunting": null,
+      "prefecture": null
+    },
+    {
+      "code": "94",
+      "name": "Val-de-Marne",
+      "opening": "2026-09-20",
+      "closing": "2027-02-28",
+      "noHuntingDays": null,
+      "source": {
+        "url": "https://www.chasseurdefrance.com/wp-content/uploads/2026/06/FDC-94.pdf",
+        "kind": "copie-fnc"
+      },
+      "ocr": false,
+      "prefectureHunting": null,
+      "prefecture": null
+    },
+    {
+      "code": "95",
+      "name": "Val-d’Oise",
+      "opening": null,
+      "closing": null,
+      "noHuntingDays": null,
+      "source": null,
+      "ocr": false,
+      "prefectureHunting": null,
+      "prefecture": null
+    }
+  ]
+}
