@@ -7,7 +7,7 @@ workers_dev = true
 
 # Public custom domain. Uncomment once the bredouille.app zone is on the same Cloudflare account:
 # the custom domain creates the DNS record and the certificate.
-# routes = [{ pattern = "mcp.bredouille.app", custom_domain = true }]
+routes = [{ pattern = "mcp.bredouille.app", custom_domain = true }]
 
 [vars]
 BREDOUILLE_API_URL = "https://api.bredouille.app"
@@ -15,7 +15,7 @@ SITE_URL = "https://bredouille.app"
 # Requests per minute and client before 429 (in-memory fallback when the binding is absent).
 RATE_LIMIT_PER_MINUTE = "30"
 # Widget sandbox origin, asked for by ChatGPT app review. Set once the custom domain is live.
-# WIDGET_DOMAIN = "https://mcp.bredouille.app"
+WIDGET_DOMAIN = "https://mcp.bredouille.app"
 # Token for ChatGPT's MCP domain verification (served at /.well-known/openai-apps-challenge).
 # OPENAI_APPS_CHALLENGE = ""
 
@@ -28,10 +28,9 @@ simple = { limit = 30, period = 60 }
 
 # Optional: call bredouille-api through a service binding when both Workers live on the
 # same account. No public hop, and MCP traffic does not share the API's per-IP read limit.
-# [[services]]
-# binding = "BREDOUILLE_API"
-# service = "bredouille-api"
-# environment = "production"
+[[services]]
+binding = "BREDOUILLE_API"
+service = "bredouille-api"
 
 [observability]
 enabled = true
