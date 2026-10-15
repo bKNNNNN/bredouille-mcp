@@ -2,7 +2,7 @@
 
 A remote [MCP](https://modelcontextprotocol.io) server for [Bredouille](https://bredouille.app), a French map of mushroom growing conditions. It lets Claude, ChatGPT and any other MCP client answer questions such as "are conditions good for cèpes near Tulle this weekend?" from Bredouille's published index.
 
-It runs on a Cloudflare Worker (free plan), holds no state, and only reads public data.
+It runs on a Cloudflare Worker, holds no state, and only reads public data.
 
 > **Safety.** Bredouille describes weather and soil conditions, not mushrooms. It never says that a mushroom is edible and it never identifies anything. Every answer ends with: *« Bredouille indique des conditions, pas des champignons. Faites contrôler toute cueillette. »* Have every harvest checked by a pharmacist or a mycological society before eating anything.
 
@@ -91,28 +91,15 @@ The full list of sources for a run is in `https://api.bredouille.app/api/manifes
 - Answers never include the coordinates of the 1 km cell, only the commune name. `geocoder` returns commune centres, which are public.
 - Privacy policy: [bredouille.app/confidentialite](https://bredouille.app/confidentialite/).
 
-## Limits and cost
+## Limits
 
 - Rate limit: 30 MCP requests per minute per client (Workers rate limiting binding, counted per Cloudflare location; falls back to a per-isolate counter when the binding is absent). Above that: HTTP 429 with `retry-after: 60`.
 - Upstream answers are cached at the edge (Cache API) for 10 minutes, commune lookups for 24 hours, and only after they pass their schema check. The Cache API does nothing on `*.workers.dev`, so each isolate also keeps its last 200 answers in memory. Every upstream call has a 6 s timeout covering the body, and bodies over 2 MB are refused.
 - Request bodies over 64 KB are refused.
 
-Fetches per tool call, before the cache:
-
-| Call | Fetches |
-|---|---|
-| `conditions_lieu`, `meilleurs_jours` | 3 (manifest, point, commune name) |
-| `pourquoi` | 3 (drivers, point, commune name) |
-| `geocoder` | 1, or 2 for a département name |
-| `fiabilite` | 1 (`accuracy.json`, about 250 KB) |
-| `regles_et_chasse` | 1 (rules file) |
-| `resources/read bredouille://especes` | 1 (manifest) |
-
-Each cache miss also costs one Cache API read and one write, so a call stays under 10 subrequests, far from the free plan's 50. Each MCP message is one Worker request: a client that connects, lists tools and makes one call uses about four. The free plan's 100,000 requests a day therefore cover at least 25,000 questions, more when clients keep their connection. Measured locally in Node: about 1.1 to 1.3 ms of CPU per warm request, about 40 ms for the first request of a fresh isolate. Bundle: 269 KiB gzip.
-
 ## Self-hosting
 
-Requirements: Node 22+, a Cloudflare account (free plan is enough).
+Requirements: Node 22+ and a Cloudflare account.
 
 ```bash
 npm ci

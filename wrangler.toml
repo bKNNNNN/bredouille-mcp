@@ -1,4 +1,4 @@
-# bredouille-mcp: remote MCP server for Bredouille, on Cloudflare Workers (free plan).
+# bredouille-mcp: remote MCP server for Bredouille, on Cloudflare Workers.
 # Local: `npm run dev` (http://127.0.0.1:8788/mcp). Deploy: `npx wrangler deploy` (owner only).
 name = "bredouille-mcp"
 main = "src/index.ts"
@@ -19,7 +19,7 @@ WIDGET_DOMAIN = "https://mcp.bredouille.app"
 # Token for ChatGPT's MCP domain verification (served at /.well-known/openai-apps-challenge).
 # OPENAI_APPS_CHALLENGE = ""
 
-# Workers rate limiting binding (free plan). Counts per Cloudflare location, approximate.
+# Workers rate limiting binding. Counts per Cloudflare location, approximate.
 # If the account refuses it, delete this block: the Worker falls back to a per-isolate counter.
 [[ratelimits]]
 name = "MCP_LIMITER"
