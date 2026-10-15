@@ -45,9 +45,9 @@ simple = { limit = 600, period = 60 }
 # Shared daily request count across isolates (optional). Without it each isolate only knows
 # its own count. Create it once with `npx wrangler kv namespace create DAILY_COUNTER`, then
 # uncomment and paste the id.
-# [[kv_namespaces]]
-# binding = "DAILY_COUNTER"
-# id = ""
+[[kv_namespaces]]
+binding = "DAILY_COUNTER"
+id = "e27566aa926644969043decec86c46f9"
 
 # Optional: call bredouille-api through a service binding when both Workers live on the
 # same account. No public hop, and MCP traffic does not share the API's per-IP read limit.
