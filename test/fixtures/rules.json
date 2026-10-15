@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "licence": "ODbL-1.0",
+  "disclaimer_fr": "Ces informations sont données à titre indicatif et peuvent être incomplètes ou dépassées. Elles ne valent pas autorisation. Seuls le propriétaire du terrain et les textes en vigueur font foi. Vérifiez les panneaux sur place et l’arrêté de votre département avant de cueillir.",
+  "retrieved_at": "2026-10-14",
+  "records": [
+    {
+      "id": "88-ap-2024-06-17",
+      "dept": "88",
+      "dept_name": "Vosges",
+      "act_type": "arrete_prefectoral",
+      "act_ref": "Arrêté n° 166/DDT du 17 juin 2024 (88-2024-06-17-00002)",
+      "title": "Réglementation de la cueillette des champignons et myrtilles sauvages dans les Vosges",
+      "summary_fr": "La cueillette des champignons à usage familial est soumise à l'accord préalable du propriétaire. En forêt relevant du régime forestier, elle est limitée à 5 litres par personne, les outils scarificateurs sont interdits et la vente est réservée aux propriétaires de la ressource ou à leurs ayants droit.",
+      "signed_on": "2024-06-17",
+      "valid_from": "2024-06-18",
+      "valid_to": null,
+      "scope": {
+        "kind": "departement",
+        "label": "Département des Vosges (limite de 5 L applicable aux bois et forêts relevant du régime forestier)",
+        "insee": []
+      },
+      "species": "all",
+      "limit": {
+        "value": 5.0,
+        "unit": "L",
+        "per": "personne"
+      },
+      "forbidden_days": [],
+      "forbidden_tools": [
+        "pioche",
+        "serfouette",
+        "grappin",
+        "râteau",
+        "crocs"
+      ],
+      "commercial": "interdit",
+      "quote": "Dans les bois et forêts relevant du régime forestier, il est autorisé le ramassage, la cueillette ou la récolte d'espèces de champignons et de myrtilles ou airelles dans la limite de 5 litres par personne, sauf réglementation contraire.",
+      "source_url": "https://vosges.gouv.fr/contenu/telechargement/28597/225518/file/recueil-88-2024-082-recueil-des-actes-administratifs-special.pdf",
+      "source_name": "Préfecture des Vosges, RAA spécial n° 88-2024-082 du 18 juin 2024",
+      "checked_at": "2026-10-14",
+      "status": "en_vigueur",
+      "notes": "Texte signé lu en entier dans le RAA. Le texte signé dit 'par personne' sans 'par jour' (le projet disait 'par jour et par personne'), d'où per='personne'. Cueillette autorisée du lever au coucher du soleil (art. 4). Arrachage interdit (art. 2). 'commercial'='interdit' signifie: vente limitée aux produits prélevés par les propriétaires de la ressource ou leurs ayants droit (art. 6). Abroge l'arrêté n° 250 du 5 juillet 2021 modifié par l'arrêté n° 84/DDT du 24 mai 2023. Aucun texte postérieur trouvé."
+    },
+    {
+      "id": "24-aucun",
+      "dept": "24",
+      "dept_name": "Dordogne",
+      "act_type": null,
+      "act_ref": null,
+      "title": "Aucun arrêté préfectoral champignons trouvé pour la Dordogne",
+      "summary_fr": "Aucun arrêté trouvé",
+      "signed_on": null,
+      "valid_from": null,
+      "valid_to": null,
+      "scope": {
+        "kind": "departement",
+        "label": "Département de la Dordogne",
+        "insee": []
+      },
+      "species": "all",
+      "limit": null,
+      "forbidden_days": [],
+      "forbidden_tools": [],
+      "commercial": "non_precise",
+      "quote": null,
+      "source_url": null,
+      "source_name": null,
+      "checked_at": "2026-10-14",
+      "status": "aucun_arrete_trouve",
+      "notes": "Cherché sur dordogne.gouv.fr (recherche restreinte au domaine: résultats chasse, pêche, APPB, termites seulement) et recherches web générales (résultats non officiels uniquement). En l'absence d'arrêté, seul le code forestier s'applique (présomption d'autorisation jusqu'à 5 L en forêt relevant du régime forestier, art. R163-5 et L163-11), non saisi comme record faute d'acte départemental."
+    }
+  ]
+}

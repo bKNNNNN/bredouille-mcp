@@ -1,0 +1,741 @@
+{
+  "generated_at": "2026-10-15T00:43:07+00:00",
+  "period": [
+    2010,
+    2025
+  ],
+  "method": {
+    "confidence_rule": "species verified when the published index (cases above the habitat gate) has AUC >= 0.6, 95% CI lower bound >= 0.55 and n >= 200; regions use the shipped timing AUC and n >= 50; otherwise to_confirm"
+  },
+  "species": {
+    "boletus_edulis_grp": {
+      "common_name_fr": "cèpes",
+      "status": "evaluated",
+      "confidence": "verified",
+      "index": {
+        "index_shown": {
+          "n": 730,
+          "auc": 0.6118,
+          "auc_ci95": [
+            0.5929,
+            0.63
+          ],
+          "lift_top_decile": 1.575
+        }
+      },
+      "regions": {
+        "11": {
+          "name": "Île-de-France",
+          "n": 49,
+          "confidence": "to_confirm"
+        },
+        "24": {
+          "name": "Centre-Val de Loire",
+          "n": 50,
+          "confidence": "verified"
+        },
+        "27": {
+          "name": "Bourgogne-Franche-Comté",
+          "n": 50,
+          "confidence": "verified"
+        },
+        "28": {
+          "name": "Normandie",
+          "n": 30,
+          "confidence": "to_confirm"
+        },
+        "32": {
+          "name": "Hauts-de-France",
+          "n": 154,
+          "confidence": "to_confirm"
+        },
+        "44": {
+          "name": "Grand Est",
+          "n": 82,
+          "confidence": "to_confirm"
+        },
+        "52": {
+          "name": "Pays de la Loire",
+          "n": 10,
+          "confidence": "to_confirm"
+        },
+        "53": {
+          "name": "Bretagne",
+          "n": 27,
+          "confidence": "to_confirm"
+        },
+        "75": {
+          "name": "Nouvelle-Aquitaine",
+          "n": 24,
+          "confidence": "to_confirm"
+        },
+        "76": {
+          "name": "Occitanie",
+          "n": 174,
+          "confidence": "verified"
+        },
+        "84": {
+          "name": "Auvergne-Rhône-Alpes",
+          "n": 263,
+          "confidence": "to_confirm"
+        },
+        "93": {
+          "name": "Provence-Alpes-Côte d'Azur",
+          "n": 4,
+          "confidence": "to_confirm"
+        },
+        "94": {
+          "name": "Corse",
+          "n": 16,
+          "confidence": "to_confirm"
+        }
+      }
+    },
+    "cantharellus_cibarius": {
+      "common_name_fr": "girolle",
+      "status": "evaluated",
+      "confidence": "verified",
+      "index": {
+        "index_shown": {
+          "n": 453,
+          "auc": 0.6287,
+          "auc_ci95": [
+            0.6077,
+            0.6506
+          ],
+          "lift_top_decile": 1.501
+        }
+      },
+      "regions": {
+        "11": {
+          "name": "Île-de-France",
+          "n": 8,
+          "confidence": "to_confirm"
+        },
+        "24": {
+          "name": "Centre-Val de Loire",
+          "n": 14,
+          "confidence": "to_confirm"
+        },
+        "27": {
+          "name": "Bourgogne-Franche-Comté",
+          "n": 23,
+          "confidence": "to_confirm"
+        },
+        "28": {
+          "name": "Normandie",
+          "n": 17,
+          "confidence": "to_confirm"
+        },
+        "32": {
+          "name": "Hauts-de-France",
+          "n": 65,
+          "confidence": "verified"
+        },
+        "44": {
+          "name": "Grand Est",
+          "n": 68,
+          "confidence": "verified"
+        },
+        "53": {
+          "name": "Bretagne",
+          "n": 7,
+          "confidence": "to_confirm"
+        },
+        "75": {
+          "name": "Nouvelle-Aquitaine",
+          "n": 11,
+          "confidence": "to_confirm"
+        },
+        "76": {
+          "name": "Occitanie",
+          "n": 139,
+          "confidence": "verified"
+        },
+        "84": {
+          "name": "Auvergne-Rhône-Alpes",
+          "n": 186,
+          "confidence": "verified"
+        },
+        "93": {
+          "name": "Provence-Alpes-Côte d'Azur",
+          "n": 2,
+          "confidence": "to_confirm"
+        },
+        "94": {
+          "name": "Corse",
+          "n": 29,
+          "confidence": "to_confirm"
+        }
+      }
+    },
+    "craterellus_cornucopioides": {
+      "common_name_fr": "trompette de la mort",
+      "status": "evaluated",
+      "confidence": "to_confirm",
+      "index": {
+        "index_shown": {
+          "n": 176,
+          "auc": 0.6346,
+          "auc_ci95": [
+            0.6001,
+            0.6714
+          ],
+          "lift_top_decile": 2.102
+        }
+      },
+      "regions": {
+        "11": {
+          "name": "Île-de-France",
+          "n": 3,
+          "confidence": "to_confirm"
+        },
+        "24": {
+          "name": "Centre-Val de Loire",
+          "n": 7,
+          "confidence": "to_confirm"
+        },
+        "27": {
+          "name": "Bourgogne-Franche-Comté",
+          "n": 12,
+          "confidence": "to_confirm"
+        },
+        "28": {
+          "name": "Normandie",
+          "n": 10,
+          "confidence": "to_confirm"
+        },
+        "32": {
+          "name": "Hauts-de-France",
+          "n": 33,
+          "confidence": "to_confirm"
+        },
+        "44": {
+          "name": "Grand Est",
+          "n": 24,
+          "confidence": "to_confirm"
+        },
+        "75": {
+          "name": "Nouvelle-Aquitaine",
+          "n": 5,
+          "confidence": "to_confirm"
+        },
+        "76": {
+          "name": "Occitanie",
+          "n": 35,
+          "confidence": "to_confirm"
+        },
+        "84": {
+          "name": "Auvergne-Rhône-Alpes",
+          "n": 86,
+          "confidence": "verified"
+        },
+        "93": {
+          "name": "Provence-Alpes-Côte d'Azur",
+          "n": 1,
+          "confidence": "to_confirm"
+        },
+        "94": {
+          "name": "Corse",
+          "n": 9,
+          "confidence": "to_confirm"
+        }
+      }
+    },
+    "craterellus_tubaeformis": {
+      "common_name_fr": "chanterelle en tube",
+      "status": "evaluated",
+      "confidence": "to_confirm",
+      "index": {
+        "index_shown": {
+          "n": 329,
+          "auc": 0.5575,
+          "auc_ci95": [
+            0.5302,
+            0.5867
+          ],
+          "lift_top_decile": 1.337
+        }
+      },
+      "regions": {
+        "11": {
+          "name": "Île-de-France",
+          "n": 7,
+          "confidence": "to_confirm"
+        },
+        "24": {
+          "name": "Centre-Val de Loire",
+          "n": 18,
+          "confidence": "to_confirm"
+        },
+        "27": {
+          "name": "Bourgogne-Franche-Comté",
+          "n": 11,
+          "confidence": "to_confirm"
+        },
+        "28": {
+          "name": "Normandie",
+          "n": 29,
+          "confidence": "to_confirm"
+        },
+        "32": {
+          "name": "Hauts-de-France",
+          "n": 45,
+          "confidence": "to_confirm"
+        },
+        "44": {
+          "name": "Grand Est",
+          "n": 20,
+          "confidence": "to_confirm"
+        },
+        "52": {
+          "name": "Pays de la Loire",
+          "n": 2,
+          "confidence": "to_confirm"
+        },
+        "53": {
+          "name": "Bretagne",
+          "n": 9,
+          "confidence": "to_confirm"
+        },
+        "75": {
+          "name": "Nouvelle-Aquitaine",
+          "n": 9,
+          "confidence": "to_confirm"
+        },
+        "76": {
+          "name": "Occitanie",
+          "n": 87,
+          "confidence": "to_confirm"
+        },
+        "84": {
+          "name": "Auvergne-Rhône-Alpes",
+          "n": 137,
+          "confidence": "to_confirm"
+        },
+        "93": {
+          "name": "Provence-Alpes-Côte d'Azur",
+          "n": 2,
+          "confidence": "to_confirm"
+        },
+        "94": {
+          "name": "Corse",
+          "n": 16,
+          "confidence": "to_confirm"
+        }
+      }
+    },
+    "hydnum_repandum": {
+      "common_name_fr": "pied-de-mouton",
+      "status": "evaluated",
+      "confidence": "to_confirm",
+      "index": {
+        "index_shown": {
+          "n": 520,
+          "auc": 0.5802,
+          "auc_ci95": [
+            0.5594,
+            0.6009
+          ],
+          "lift_top_decile": 1.269
+        }
+      },
+      "regions": {
+        "11": {
+          "name": "Île-de-France",
+          "n": 12,
+          "confidence": "to_confirm"
+        },
+        "24": {
+          "name": "Centre-Val de Loire",
+          "n": 31,
+          "confidence": "to_confirm"
+        },
+        "27": {
+          "name": "Bourgogne-Franche-Comté",
+          "n": 35,
+          "confidence": "to_confirm"
+        },
+        "28": {
+          "name": "Normandie",
+          "n": 20,
+          "confidence": "to_confirm"
+        },
+        "32": {
+          "name": "Hauts-de-France",
+          "n": 122,
+          "confidence": "verified"
+        },
+        "44": {
+          "name": "Grand Est",
+          "n": 50,
+          "confidence": "verified"
+        },
+        "53": {
+          "name": "Bretagne",
+          "n": 10,
+          "confidence": "to_confirm"
+        },
+        "75": {
+          "name": "Nouvelle-Aquitaine",
+          "n": 13,
+          "confidence": "to_confirm"
+        },
+        "76": {
+          "name": "Occitanie",
+          "n": 132,
+          "confidence": "to_confirm"
+        },
+        "84": {
+          "name": "Auvergne-Rhône-Alpes",
+          "n": 206,
+          "confidence": "to_confirm"
+        },
+        "93": {
+          "name": "Provence-Alpes-Côte d'Azur",
+          "n": 2,
+          "confidence": "to_confirm"
+        },
+        "94": {
+          "name": "Corse",
+          "n": 16,
+          "confidence": "to_confirm"
+        }
+      }
+    },
+    "imleria_badia": {
+      "common_name_fr": "bolet bai",
+      "status": "evaluated",
+      "confidence": "to_confirm",
+      "index": {
+        "index_shown": {
+          "n": 351,
+          "auc": 0.5432,
+          "auc_ci95": [
+            0.5154,
+            0.5723
+          ],
+          "lift_top_decile": 1.14
+        }
+      },
+      "regions": {
+        "11": {
+          "name": "Île-de-France",
+          "n": 30,
+          "confidence": "to_confirm"
+        },
+        "24": {
+          "name": "Centre-Val de Loire",
+          "n": 16,
+          "confidence": "to_confirm"
+        },
+        "27": {
+          "name": "Bourgogne-Franche-Comté",
+          "n": 10,
+          "confidence": "to_confirm"
+        },
+        "28": {
+          "name": "Normandie",
+          "n": 33,
+          "confidence": "to_confirm"
+        },
+        "32": {
+          "name": "Hauts-de-France",
+          "n": 136,
+          "confidence": "to_confirm"
+        },
+        "44": {
+          "name": "Grand Est",
+          "n": 20,
+          "confidence": "to_confirm"
+        },
+        "52": {
+          "name": "Pays de la Loire",
+          "n": 3,
+          "confidence": "to_confirm"
+        },
+        "53": {
+          "name": "Bretagne",
+          "n": 16,
+          "confidence": "to_confirm"
+        },
+        "75": {
+          "name": "Nouvelle-Aquitaine",
+          "n": 12,
+          "confidence": "to_confirm"
+        },
+        "76": {
+          "name": "Occitanie",
+          "n": 104,
+          "confidence": "to_confirm"
+        },
+        "84": {
+          "name": "Auvergne-Rhône-Alpes",
+          "n": 101,
+          "confidence": "to_confirm"
+        }
+      }
+    },
+    "lepista_nuda": {
+      "common_name_fr": "pied bleu",
+      "status": "evaluated",
+      "confidence": "to_confirm",
+      "index": {
+        "index_shown": {
+          "n": 302,
+          "auc": 0.5423,
+          "auc_ci95": [
+            0.5163,
+            0.5706
+          ],
+          "lift_top_decile": 0.728
+        }
+      },
+      "regions": {
+        "11": {
+          "name": "Île-de-France",
+          "n": 7,
+          "confidence": "to_confirm"
+        },
+        "24": {
+          "name": "Centre-Val de Loire",
+          "n": 10,
+          "confidence": "to_confirm"
+        },
+        "27": {
+          "name": "Bourgogne-Franche-Comté",
+          "n": 13,
+          "confidence": "to_confirm"
+        },
+        "28": {
+          "name": "Normandie",
+          "n": 13,
+          "confidence": "to_confirm"
+        },
+        "32": {
+          "name": "Hauts-de-France",
+          "n": 92,
+          "confidence": "to_confirm"
+        },
+        "44": {
+          "name": "Grand Est",
+          "n": 11,
+          "confidence": "to_confirm"
+        },
+        "52": {
+          "name": "Pays de la Loire",
+          "n": 3,
+          "confidence": "to_confirm"
+        },
+        "53": {
+          "name": "Bretagne",
+          "n": 7,
+          "confidence": "to_confirm"
+        },
+        "75": {
+          "name": "Nouvelle-Aquitaine",
+          "n": 2,
+          "confidence": "to_confirm"
+        },
+        "76": {
+          "name": "Occitanie",
+          "n": 54,
+          "confidence": "to_confirm"
+        },
+        "84": {
+          "name": "Auvergne-Rhône-Alpes",
+          "n": 103,
+          "confidence": "to_confirm"
+        },
+        "93": {
+          "name": "Provence-Alpes-Côte d'Azur",
+          "n": 8,
+          "confidence": "to_confirm"
+        },
+        "94": {
+          "name": "Corse",
+          "n": 19,
+          "confidence": "to_confirm"
+        }
+      }
+    },
+    "morchella_spp": {
+      "common_name_fr": "morille",
+      "status": "evaluated",
+      "confidence": "to_confirm",
+      "index": {
+        "index_shown": {
+          "n": 135,
+          "auc": 0.5341,
+          "auc_ci95": [
+            0.4921,
+            0.5767
+          ],
+          "lift_top_decile": 0.667
+        }
+      },
+      "regions": {
+        "11": {
+          "name": "Île-de-France",
+          "n": 9,
+          "confidence": "to_confirm"
+        },
+        "24": {
+          "name": "Centre-Val de Loire",
+          "n": 10,
+          "confidence": "to_confirm"
+        },
+        "27": {
+          "name": "Bourgogne-Franche-Comté",
+          "n": 3,
+          "confidence": "to_confirm"
+        },
+        "28": {
+          "name": "Normandie",
+          "n": 5,
+          "confidence": "to_confirm"
+        },
+        "32": {
+          "name": "Hauts-de-France",
+          "n": 17,
+          "confidence": "to_confirm"
+        },
+        "44": {
+          "name": "Grand Est",
+          "n": 7,
+          "confidence": "to_confirm"
+        },
+        "53": {
+          "name": "Bretagne",
+          "n": 1,
+          "confidence": "to_confirm"
+        },
+        "75": {
+          "name": "Nouvelle-Aquitaine",
+          "n": 3,
+          "confidence": "to_confirm"
+        },
+        "76": {
+          "name": "Occitanie",
+          "n": 28,
+          "confidence": "to_confirm"
+        },
+        "84": {
+          "name": "Auvergne-Rhône-Alpes",
+          "n": 49,
+          "confidence": "to_confirm"
+        },
+        "93": {
+          "name": "Provence-Alpes-Côte d'Azur",
+          "n": 3,
+          "confidence": "to_confirm"
+        },
+        "94": {
+          "name": "Corse",
+          "n": 10,
+          "confidence": "to_confirm"
+        }
+      }
+    }
+  },
+  "forecast_skill": {
+    "species": {
+      "boletus_edulis_grp": [
+        {
+          "lead_days": 3,
+          "agreement": 0.9432,
+          "label_fr": "À J+3, la carte garde la même classe dans 94 % des cas."
+        },
+        {
+          "lead_days": 7,
+          "agreement": 0.7973,
+          "label_fr": "À J+7, la carte garde la même classe dans 80 % des cas."
+        }
+      ],
+      "cantharellus_cibarius": [
+        {
+          "lead_days": 3,
+          "agreement": 0.9319,
+          "label_fr": "À J+3, la carte garde la même classe dans 93 % des cas."
+        },
+        {
+          "lead_days": 7,
+          "agreement": 0.7557,
+          "label_fr": "À J+7, la carte garde la même classe dans 76 % des cas."
+        }
+      ],
+      "craterellus_cornucopioides": [
+        {
+          "lead_days": 3,
+          "agreement": 0.9425,
+          "label_fr": "À J+3, la carte garde la même classe dans 94 % des cas."
+        },
+        {
+          "lead_days": 7,
+          "agreement": 0.7972,
+          "label_fr": "À J+7, la carte garde la même classe dans 80 % des cas."
+        }
+      ],
+      "craterellus_tubaeformis": [
+        {
+          "lead_days": 3,
+          "agreement": 0.9553,
+          "label_fr": "À J+3, la carte garde la même classe dans 96 % des cas."
+        },
+        {
+          "lead_days": 7,
+          "agreement": 0.8277,
+          "label_fr": "À J+7, la carte garde la même classe dans 83 % des cas."
+        }
+      ],
+      "hydnum_repandum": [
+        {
+          "lead_days": 3,
+          "agreement": 0.9505,
+          "label_fr": "À J+3, la carte garde la même classe dans 95 % des cas."
+        },
+        {
+          "lead_days": 7,
+          "agreement": 0.8199,
+          "label_fr": "À J+7, la carte garde la même classe dans 82 % des cas."
+        }
+      ],
+      "imleria_badia": [
+        {
+          "lead_days": 3,
+          "agreement": 0.9506,
+          "label_fr": "À J+3, la carte garde la même classe dans 95 % des cas."
+        },
+        {
+          "lead_days": 7,
+          "agreement": 0.8214,
+          "label_fr": "À J+7, la carte garde la même classe dans 82 % des cas."
+        }
+      ],
+      "lepista_nuda": [
+        {
+          "lead_days": 3,
+          "agreement": 0.9683,
+          "label_fr": "À J+3, la carte garde la même classe dans 97 % des cas."
+        },
+        {
+          "lead_days": 7,
+          "agreement": 0.8766,
+          "label_fr": "À J+7, la carte garde la même classe dans 88 % des cas."
+        }
+      ],
+      "morchella_spp": [
+        {
+          "lead_days": 3,
+          "agreement": 0.9593,
+          "label_fr": "À J+3, la carte garde la même classe dans 96 % des cas."
+        },
+        {
+          "lead_days": 7,
+          "agreement": 0.744,
+          "label_fr": "À J+7, la carte garde la même classe dans 74 % des cas."
+        }
+      ]
+    }
+  }
+}

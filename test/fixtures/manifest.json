@@ -1,0 +1,1465 @@
+{
+  "runId": "2026-10-15",
+  "manifest": {
+    "run_date": "2026-10-15",
+    "index_licence": "CC-BY-4.0",
+    "classes": [
+      {
+        "id": "below",
+        "min": 1,
+        "max": 39,
+        "label_fr": "Moins bon que d'habitude"
+      },
+      {
+        "id": "usual",
+        "min": 40,
+        "max": 69,
+        "label_fr": "Habituel"
+      },
+      {
+        "id": "better",
+        "min": 70,
+        "max": 89,
+        "label_fr": "Meilleur que d'habitude"
+      },
+      {
+        "id": "best",
+        "min": 90,
+        "max": 100,
+        "label_fr": "Parmi les meilleurs jours du lieu"
+      }
+    ],
+    "species": [
+      {
+        "code": "boletus_edulis_grp",
+        "common_name_fr": "cèpes",
+        "scientific_names": [
+          "Boletus edulis",
+          "Boletus aereus",
+          "Boletus reticulatus",
+          "Boletus pinophilus"
+        ],
+        "confidence": "verified",
+        "days": [
+          {
+            "day": "2026-10-01",
+            "status": "ok",
+            "kind": "observed",
+            "lead_days": -14,
+            "class_agreement": null
+          },
+          {
+            "day": "2026-10-02",
+            "status": "ok",
+            "kind": "observed",
+            "lead_days": -13,
+            "class_agreement": null
+          },
+          {
+            "day": "2026-10-03",
+            "status": "ok",
+            "kind": "observed",
+            "lead_days": -12,
+            "class_agreement": null
+          },
+          {
+            "day": "2026-10-04",
+            "status": "ok",
+            "kind": "observed",
+            "lead_days": -11,
+            "class_agreement": null
+          },
+          {
+            "day": "2026-10-05",
+            "status": "ok",
+            "kind": "observed",
+            "lead_days": -10,
+            "class_agreement": null
+          },
+          {
+            "day": "2026-10-06",
+            "status": "ok",
+            "kind": "observed",
+            "lead_days": -9,
+            "class_agreement": null
+          },
+          {
+            "day": "2026-10-07",
+            "status": "ok",
+            "kind": "observed",
+            "lead_days": -8,
+            "class_agreement": null
+          },
+          {
+            "day": "2026-10-08",
+            "status": "ok",
+            "kind": "observed",
+            "lead_days": -7,
+            "class_agreement": null
+          },
+          {
+            "day": "2026-10-09",
+            "status": "ok",
+            "kind": "observed",
+            "lead_days": -6,
+            "class_agreement": null
+          },
+          {
+            "day": "2026-10-10",
+            "status": "ok",
+            "kind": "observed",
+            "lead_days": -5,
+            "class_agreement": null
+          },
+          {
+            "day": "2026-10-11",
+            "status": "ok",
+            "kind": "observed",
+            "lead_days": -4,
+            "class_agreement": null
+          },
+          {
+            "day": "2026-10-12",
+            "status": "ok",
+            "kind": "observed",
+            "lead_days": -3,
+            "class_agreement": null
+          },
+          {
+            "day": "2026-10-13",
+            "status": "ok",
+            "kind": "observed",
+            "lead_days": -2,
+            "class_agreement": null
+          },
+          {
+            "day": "2026-10-14",
+            "status": "ok",
+            "kind": "observed",
+            "lead_days": -1,
+            "class_agreement": null
+          },
+          {
+            "day": "2026-10-15",
+            "status": "ok",
+            "kind": "forecast",
+            "lead_days": 0,
+            "class_agreement": 0.9856
+          },
+          {
+            "day": "2026-10-16",
+            "status": "ok",
+            "kind": "forecast",
+            "lead_days": 1,
+            "class_agreement": 0.9803
+          },
+          {
+            "day": "2026-10-17",
+            "status": "ok",
+            "kind": "forecast",
+            "lead_days": 2,
+            "class_agreement": 0.9751
+          },
+          {
+            "day": "2026-10-18",
+            "status": "ok",
+            "kind": "forecast",
+            "lead_days": 3,
+            "class_agreement": 0.9432
+          },
+          {
+            "day": "2026-10-19",
+            "status": "ok",
+            "kind": "forecast",
+            "lead_days": 4,
+            "class_agreement": 0.8987
+          },
+          {
+            "day": "2026-10-20",
+            "status": "ok",
+            "kind": "forecast",
+            "lead_days": 5,
+            "class_agreement": 0.8602
+          },
+          {
+            "day": "2026-10-21",
+            "status": "ok",
+            "kind": "forecast",
+            "lead_days": 6,
+            "class_agreement": 0.8254
+          },
+          {
+            "day": "2026-10-22",
+            "status": "ok",
+            "kind": "forecast",
+            "lead_days": 7,
+            "class_agreement": 0.7973
+          },
+          {
+            "day": "2026-10-23",
+            "status": "ok",
+            "kind": "forecast",
+            "lead_days": 8,
+            "class_agreement": 0.7726
+          },
+          {
+            "day": "2026-10-24",
+            "status": "ok",
+            "kind": "forecast",
+            "lead_days": 9,
+            "class_agreement": 0.7506
+          }
+        ]
+      },
+      {
+        "code": "cantharellus_cibarius",
+        "common_name_fr": "girolle",
+        "scientific_names": [
+          "Cantharellus cibarius",
+          "Cantharellus pallens"
+        ],
+        "confidence": "verified",
+        "days": [
+          {
+            "day": "2026-10-01",
+            "status": "ok",
+            "kind": "observed",
+            "lead_days": -14,
+            "class_agreement": null
+          },
+          {
+            "day": "2026-10-02",
+            "status": "ok",
+            "kind": "observed",
+            "lead_days": -13,
+            "class_agreement": null
+          },
+          {
+            "day": "2026-10-03",
+            "status": "ok",
+            "kind": "observed",
+            "lead_days": -12,
+            "class_agreement": null
+          },
+          {
+            "day": "2026-10-04",
+            "status": "ok",
+            "kind": "observed",
+            "lead_days": -11,
+            "class_agreement": null
+          },
+          {
+            "day": "2026-10-05",
+            "status": "ok",
+            "kind": "observed",
+            "lead_days": -10,
+            "class_agreement": null
+          },
+          {
+            "day": "2026-10-06",
+            "status": "ok",
+            "kind": "observed",
+            "lead_days": -9,
+            "class_agreement": null
+          },
+          {
+            "day": "2026-10-07",
+            "status": "ok",
+            "kind": "observed",
+            "lead_days": -8,
+            "class_agreement": null
+          },
+          {
+            "day": "2026-10-08",
+            "status": "ok",
+            "kind": "observed",
+            "lead_days": -7,
+            "class_agreement": null
+          },
+          {
+            "day": "2026-10-09",
+            "status": "ok",
+            "kind": "observed",
+            "lead_days": -6,
+            "class_agreement": null
+          },
+          {
+            "day": "2026-10-10",
+            "status": "ok",
+            "kind": "observed",
+            "lead_days": -5,
+            "class_agreement": null
+          },
+          {
+            "day": "2026-10-11",
+            "status": "ok",
+            "kind": "observed",
+            "lead_days": -4,
+            "class_agreement": null
+          },
+          {
+            "day": "2026-10-12",
+            "status": "ok",
+            "kind": "observed",
+            "lead_days": -3,
+            "class_agreement": null
+          },
+          {
+            "day": "2026-10-13",
+            "status": "ok",
+            "kind": "observed",
+            "lead_days": -2,
+            "class_agreement": null
+          },
+          {
+            "day": "2026-10-14",
+            "status": "ok",
+            "kind": "observed",
+            "lead_days": -1,
+            "class_agreement": null
+          },
+          {
+            "day": "2026-10-15",
+            "status": "ok",
+            "kind": "forecast",
+            "lead_days": 0,
+            "class_agreement": 0.9803
+          },
+          {
+            "day": "2026-10-16",
+            "status": "ok",
+            "kind": "forecast",
+            "lead_days": 1,
+            "class_agreement": 0.9727
+          },
+          {
+            "day": "2026-10-17",
+            "status": "ok",
+            "kind": "forecast",
+            "lead_days": 2,
+            "class_agreement": 0.966
+          },
+          {
+            "day": "2026-10-18",
+            "status": "ok",
+            "kind": "forecast",
+            "lead_days": 3,
+            "class_agreement": 0.9319
+          },
+          {
+            "day": "2026-10-19",
+            "status": "ok",
+            "kind": "forecast",
+            "lead_days": 4,
+            "class_agreement": 0.8777
+          },
+          {
+            "day": "2026-10-20",
+            "status": "ok",
+            "kind": "forecast",
+            "lead_days": 5,
+            "class_agreement": 0.8308
+          },
+          {
+            "day": "2026-10-21",
+            "status": "ok",
+            "kind": "forecast",
+            "lead_days": 6,
+            "class_agreement": 0.7903
+          },
+          {
+            "day": "2026-10-22",
+            "status": "ok",
+            "kind": "forecast",
+            "lead_days": 7,
+            "class_agreement": 0.7557
+          },
+          {
+            "day": "2026-10-23",
+            "status": "ok",
+            "kind": "forecast",
+            "lead_days": 8,
+            "class_agreement": 0.7237
+          },
+          {
+            "day": "2026-10-24",
+            "status": "ok",
+            "kind": "forecast",
+            "lead_days": 9,
+            "class_agreement": 0.6954
+          }
+        ]
+      },
+      {
+        "code": "craterellus_cornucopioides",
+        "common_name_fr": "trompette de la mort",
+        "scientific_names": [
+          "Craterellus cornucopioides"
+        ],
+        "confidence": "to_confirm",
+        "days": [
+          {
+            "day": "2026-10-01",
+            "status": "ok",
+            "kind": "observed",
+            "lead_days": -14,
+            "class_agreement": null
+          },
+          {
+            "day": "2026-10-02",
+            "status": "ok",
+            "kind": "observed",
+            "lead_days": -13,
+            "class_agreement": null
+          },
+          {
+            "day": "2026-10-03",
+            "status": "ok",
+            "kind": "observed",
+            "lead_days": -12,
+            "class_agreement": null
+          },
+          {
+            "day": "2026-10-04",
+            "status": "ok",
+            "kind": "observed",
+            "lead_days": -11,
+            "class_agreement": null
+          },
+          {
+            "day": "2026-10-05",
+            "status": "ok",
+            "kind": "observed",
+            "lead_days": -10,
+            "class_agreement": null
+          },
+          {
+            "day": "2026-10-06",
+            "status": "ok",
+            "kind": "observed",
+            "lead_days": -9,
+            "class_agreement": null
+          },
+          {
+            "day": "2026-10-07",
+            "status": "ok",
+            "kind": "observed",
+            "lead_days": -8,
+            "class_agreement": null
+          },
+          {
+            "day": "2026-10-08",
+            "status": "ok",
+            "kind": "observed",
+            "lead_days": -7,
+            "class_agreement": null
+          },
+          {
+            "day": "2026-10-09",
+            "status": "ok",
+            "kind": "observed",
+            "lead_days": -6,
+            "class_agreement": null
+          },
+          {
+            "day": "2026-10-10",
+            "status": "ok",
+            "kind": "observed",
+            "lead_days": -5,
+            "class_agreement": null
+          },
+          {
+            "day": "2026-10-11",
+            "status": "ok",
+            "kind": "observed",
+            "lead_days": -4,
+            "class_agreement": null
+          },
+          {
+            "day": "2026-10-12",
+            "status": "ok",
+            "kind": "observed",
+            "lead_days": -3,
+            "class_agreement": null
+          },
+          {
+            "day": "2026-10-13",
+            "status": "ok",
+            "kind": "observed",
+            "lead_days": -2,
+            "class_agreement": null
+          },
+          {
+            "day": "2026-10-14",
+            "status": "ok",
+            "kind": "observed",
+            "lead_days": -1,
+            "class_agreement": null
+          },
+          {
+            "day": "2026-10-15",
+            "status": "ok",
+            "kind": "forecast",
+            "lead_days": 0,
+            "class_agreement": 0.984
+          },
+          {
+            "day": "2026-10-16",
+            "status": "ok",
+            "kind": "forecast",
+            "lead_days": 1,
+            "class_agreement": 0.9783
+          },
+          {
+            "day": "2026-10-17",
+            "status": "ok",
+            "kind": "forecast",
+            "lead_days": 2,
+            "class_agreement": 0.9731
+          },
+          {
+            "day": "2026-10-18",
+            "status": "ok",
+            "kind": "forecast",
+            "lead_days": 3,
+            "class_agreement": 0.9425
+          },
+          {
+            "day": "2026-10-19",
+            "status": "ok",
+            "kind": "forecast",
+            "lead_days": 4,
+            "class_agreement": 0.8992
+          },
+          {
+            "day": "2026-10-20",
+            "status": "ok",
+            "kind": "forecast",
+            "lead_days": 5,
+            "class_agreement": 0.86
+          },
+          {
+            "day": "2026-10-21",
+            "status": "ok",
+            "kind": "forecast",
+            "lead_days": 6,
+            "class_agreement": 0.8256
+          },
+          {
+            "day": "2026-10-22",
+            "status": "ok",
+            "kind": "forecast",
+            "lead_days": 7,
+            "class_agreement": 0.7972
+          },
+          {
+            "day": "2026-10-23",
+            "status": "ok",
+            "kind": "forecast",
+            "lead_days": 8,
+            "class_agreement": 0.7724
+          },
+          {
+            "day": "2026-10-24",
+            "status": "ok",
+            "kind": "forecast",
+            "lead_days": 9,
+            "class_agreement": 0.7513
+          }
+        ]
+      },
+      {
+        "code": "craterellus_tubaeformis",
+        "common_name_fr": "chanterelle en tube",
+        "scientific_names": [
+          "Craterellus tubaeformis",
+          "Craterellus lutescens"
+        ],
+        "confidence": "to_confirm",
+        "days": [
+          {
+            "day": "2026-10-01",
+            "status": "ok",
+            "kind": "observed",
+            "lead_days": -14,
+            "class_agreement": null
+          },
+          {
+            "day": "2026-10-02",
+            "status": "ok",
+            "kind": "observed",
+            "lead_days": -13,
+            "class_agreement": null
+          },
+          {
+            "day": "2026-10-03",
+            "status": "ok",
+            "kind": "observed",
+            "lead_days": -12,
+            "class_agreement": null
+          },
+          {
+            "day": "2026-10-04",
+            "status": "ok",
+            "kind": "observed",
+            "lead_days": -11,
+            "class_agreement": null
+          },
+          {
+            "day": "2026-10-05",
+            "status": "ok",
+            "kind": "observed",
+            "lead_days": -10,
+            "class_agreement": null
+          },
+          {
+            "day": "2026-10-06",
+            "status": "ok",
+            "kind": "observed",
+            "lead_days": -9,
+            "class_agreement": null
+          },
+          {
+            "day": "2026-10-07",
+            "status": "ok",
+            "kind": "observed",
+            "lead_days": -8,
+            "class_agreement": null
+          },
+          {
+            "day": "2026-10-08",
+            "status": "ok",
+            "kind": "observed",
+            "lead_days": -7,
+            "class_agreement": null
+          },
+          {
+            "day": "2026-10-09",
+            "status": "ok",
+            "kind": "observed",
+            "lead_days": -6,
+            "class_agreement": null
+          },
+          {
+            "day": "2026-10-10",
+            "status": "ok",
+            "kind": "observed",
+            "lead_days": -5,
+            "class_agreement": null
+          },
+          {
+            "day": "2026-10-11",
+            "status": "ok",
+            "kind": "observed",
+            "lead_days": -4,
+            "class_agreement": null
+          },
+          {
+            "day": "2026-10-12",
+            "status": "ok",
+            "kind": "observed",
+            "lead_days": -3,
+            "class_agreement": null
+          },
+          {
+            "day": "2026-10-13",
+            "status": "ok",
+            "kind": "observed",
+            "lead_days": -2,
+            "class_agreement": null
+          },
+          {
+            "day": "2026-10-14",
+            "status": "ok",
+            "kind": "observed",
+            "lead_days": -1,
+            "class_agreement": null
+          },
+          {
+            "day": "2026-10-15",
+            "status": "ok",
+            "kind": "forecast",
+            "lead_days": 0,
+            "class_agreement": 0.991
+          },
+          {
+            "day": "2026-10-16",
+            "status": "ok",
+            "kind": "forecast",
+            "lead_days": 1,
+            "class_agreement": 0.9881
+          },
+          {
+            "day": "2026-10-17",
+            "status": "ok",
+            "kind": "forecast",
+            "lead_days": 2,
+            "class_agreement": 0.9854
+          },
+          {
+            "day": "2026-10-18",
+            "status": "ok",
+            "kind": "forecast",
+            "lead_days": 3,
+            "class_agreement": 0.9553
+          },
+          {
+            "day": "2026-10-19",
+            "status": "ok",
+            "kind": "forecast",
+            "lead_days": 4,
+            "class_agreement": 0.9176
+          },
+          {
+            "day": "2026-10-20",
+            "status": "ok",
+            "kind": "forecast",
+            "lead_days": 5,
+            "class_agreement": 0.8855
+          },
+          {
+            "day": "2026-10-21",
+            "status": "ok",
+            "kind": "forecast",
+            "lead_days": 6,
+            "class_agreement": 0.8554
+          },
+          {
+            "day": "2026-10-22",
+            "status": "ok",
+            "kind": "forecast",
+            "lead_days": 7,
+            "class_agreement": 0.8277
+          },
+          {
+            "day": "2026-10-23",
+            "status": "ok",
+            "kind": "forecast",
+            "lead_days": 8,
+            "class_agreement": 0.7752
+          },
+          {
+            "day": "2026-10-24",
+            "status": "ok",
+            "kind": "forecast",
+            "lead_days": 9,
+            "class_agreement": 0.7263
+          }
+        ]
+      },
+      {
+        "code": "hydnum_repandum",
+        "common_name_fr": "pied-de-mouton",
+        "scientific_names": [
+          "Hydnum repandum",
+          "Hydnum rufescens"
+        ],
+        "confidence": "to_confirm",
+        "days": [
+          {
+            "day": "2026-10-01",
+            "status": "ok",
+            "kind": "observed",
+            "lead_days": -14,
+            "class_agreement": null
+          },
+          {
+            "day": "2026-10-02",
+            "status": "ok",
+            "kind": "observed",
+            "lead_days": -13,
+            "class_agreement": null
+          },
+          {
+            "day": "2026-10-03",
+            "status": "ok",
+            "kind": "observed",
+            "lead_days": -12,
+            "class_agreement": null
+          },
+          {
+            "day": "2026-10-04",
+            "status": "ok",
+            "kind": "observed",
+            "lead_days": -11,
+            "class_agreement": null
+          },
+          {
+            "day": "2026-10-05",
+            "status": "ok",
+            "kind": "observed",
+            "lead_days": -10,
+            "class_agreement": null
+          },
+          {
+            "day": "2026-10-06",
+            "status": "ok",
+            "kind": "observed",
+            "lead_days": -9,
+            "class_agreement": null
+          },
+          {
+            "day": "2026-10-07",
+            "status": "ok",
+            "kind": "observed",
+            "lead_days": -8,
+            "class_agreement": null
+          },
+          {
+            "day": "2026-10-08",
+            "status": "ok",
+            "kind": "observed",
+            "lead_days": -7,
+            "class_agreement": null
+          },
+          {
+            "day": "2026-10-09",
+            "status": "ok",
+            "kind": "observed",
+            "lead_days": -6,
+            "class_agreement": null
+          },
+          {
+            "day": "2026-10-10",
+            "status": "ok",
+            "kind": "observed",
+            "lead_days": -5,
+            "class_agreement": null
+          },
+          {
+            "day": "2026-10-11",
+            "status": "ok",
+            "kind": "observed",
+            "lead_days": -4,
+            "class_agreement": null
+          },
+          {
+            "day": "2026-10-12",
+            "status": "ok",
+            "kind": "observed",
+            "lead_days": -3,
+            "class_agreement": null
+          },
+          {
+            "day": "2026-10-13",
+            "status": "ok",
+            "kind": "observed",
+            "lead_days": -2,
+            "class_agreement": null
+          },
+          {
+            "day": "2026-10-14",
+            "status": "ok",
+            "kind": "observed",
+            "lead_days": -1,
+            "class_agreement": null
+          },
+          {
+            "day": "2026-10-15",
+            "status": "ok",
+            "kind": "forecast",
+            "lead_days": 0,
+            "class_agreement": 0.9848
+          },
+          {
+            "day": "2026-10-16",
+            "status": "ok",
+            "kind": "forecast",
+            "lead_days": 1,
+            "class_agreement": 0.9797
+          },
+          {
+            "day": "2026-10-17",
+            "status": "ok",
+            "kind": "forecast",
+            "lead_days": 2,
+            "class_agreement": 0.9747
+          },
+          {
+            "day": "2026-10-18",
+            "status": "ok",
+            "kind": "forecast",
+            "lead_days": 3,
+            "class_agreement": 0.9505
+          },
+          {
+            "day": "2026-10-19",
+            "status": "ok",
+            "kind": "forecast",
+            "lead_days": 4,
+            "class_agreement": 0.911
+          },
+          {
+            "day": "2026-10-20",
+            "status": "ok",
+            "kind": "forecast",
+            "lead_days": 5,
+            "class_agreement": 0.8756
+          },
+          {
+            "day": "2026-10-21",
+            "status": "ok",
+            "kind": "forecast",
+            "lead_days": 6,
+            "class_agreement": 0.8459
+          },
+          {
+            "day": "2026-10-22",
+            "status": "ok",
+            "kind": "forecast",
+            "lead_days": 7,
+            "class_agreement": 0.8199
+          },
+          {
+            "day": "2026-10-23",
+            "status": "ok",
+            "kind": "forecast",
+            "lead_days": 8,
+            "class_agreement": 0.798
+          },
+          {
+            "day": "2026-10-24",
+            "status": "ok",
+            "kind": "forecast",
+            "lead_days": 9,
+            "class_agreement": 0.7791
+          }
+        ]
+      },
+      {
+        "code": "imleria_badia",
+        "common_name_fr": "bolet bai",
+        "scientific_names": [
+          "Imleria badia"
+        ],
+        "confidence": "to_confirm",
+        "days": [
+          {
+            "day": "2026-10-01",
+            "status": "ok",
+            "kind": "observed",
+            "lead_days": -14,
+            "class_agreement": null
+          },
+          {
+            "day": "2026-10-02",
+            "status": "ok",
+            "kind": "observed",
+            "lead_days": -13,
+            "class_agreement": null
+          },
+          {
+            "day": "2026-10-03",
+            "status": "ok",
+            "kind": "observed",
+            "lead_days": -12,
+            "class_agreement": null
+          },
+          {
+            "day": "2026-10-04",
+            "status": "ok",
+            "kind": "observed",
+            "lead_days": -11,
+            "class_agreement": null
+          },
+          {
+            "day": "2026-10-05",
+            "status": "ok",
+            "kind": "observed",
+            "lead_days": -10,
+            "class_agreement": null
+          },
+          {
+            "day": "2026-10-06",
+            "status": "ok",
+            "kind": "observed",
+            "lead_days": -9,
+            "class_agreement": null
+          },
+          {
+            "day": "2026-10-07",
+            "status": "ok",
+            "kind": "observed",
+            "lead_days": -8,
+            "class_agreement": null
+          },
+          {
+            "day": "2026-10-08",
+            "status": "ok",
+            "kind": "observed",
+            "lead_days": -7,
+            "class_agreement": null
+          },
+          {
+            "day": "2026-10-09",
+            "status": "ok",
+            "kind": "observed",
+            "lead_days": -6,
+            "class_agreement": null
+          },
+          {
+            "day": "2026-10-10",
+            "status": "ok",
+            "kind": "observed",
+            "lead_days": -5,
+            "class_agreement": null
+          },
+          {
+            "day": "2026-10-11",
+            "status": "ok",
+            "kind": "observed",
+            "lead_days": -4,
+            "class_agreement": null
+          },
+          {
+            "day": "2026-10-12",
+            "status": "ok",
+            "kind": "observed",
+            "lead_days": -3,
+            "class_agreement": null
+          },
+          {
+            "day": "2026-10-13",
+            "status": "ok",
+            "kind": "observed",
+            "lead_days": -2,
+            "class_agreement": null
+          },
+          {
+            "day": "2026-10-14",
+            "status": "ok",
+            "kind": "observed",
+            "lead_days": -1,
+            "class_agreement": null
+          },
+          {
+            "day": "2026-10-15",
+            "status": "ok",
+            "kind": "forecast",
+            "lead_days": 0,
+            "class_agreement": 0.9867
+          },
+          {
+            "day": "2026-10-16",
+            "status": "ok",
+            "kind": "forecast",
+            "lead_days": 1,
+            "class_agreement": 0.982
+          },
+          {
+            "day": "2026-10-17",
+            "status": "ok",
+            "kind": "forecast",
+            "lead_days": 2,
+            "class_agreement": 0.9778
+          },
+          {
+            "day": "2026-10-18",
+            "status": "ok",
+            "kind": "forecast",
+            "lead_days": 3,
+            "class_agreement": 0.9506
+          },
+          {
+            "day": "2026-10-19",
+            "status": "ok",
+            "kind": "forecast",
+            "lead_days": 4,
+            "class_agreement": 0.9111
+          },
+          {
+            "day": "2026-10-20",
+            "status": "ok",
+            "kind": "forecast",
+            "lead_days": 5,
+            "class_agreement": 0.877
+          },
+          {
+            "day": "2026-10-21",
+            "status": "ok",
+            "kind": "forecast",
+            "lead_days": 6,
+            "class_agreement": 0.8468
+          },
+          {
+            "day": "2026-10-22",
+            "status": "ok",
+            "kind": "forecast",
+            "lead_days": 7,
+            "class_agreement": 0.8214
+          },
+          {
+            "day": "2026-10-23",
+            "status": "ok",
+            "kind": "forecast",
+            "lead_days": 8,
+            "class_agreement": 0.7995
+          },
+          {
+            "day": "2026-10-24",
+            "status": "ok",
+            "kind": "forecast",
+            "lead_days": 9,
+            "class_agreement": 0.7796
+          }
+        ]
+      },
+      {
+        "code": "lepista_nuda",
+        "common_name_fr": "pied bleu",
+        "scientific_names": [
+          "Lepista nuda"
+        ],
+        "confidence": "to_confirm",
+        "days": [
+          {
+            "day": "2026-10-01",
+            "status": "ok",
+            "kind": "observed",
+            "lead_days": -14,
+            "class_agreement": null
+          },
+          {
+            "day": "2026-10-02",
+            "status": "ok",
+            "kind": "observed",
+            "lead_days": -13,
+            "class_agreement": null
+          },
+          {
+            "day": "2026-10-03",
+            "status": "ok",
+            "kind": "observed",
+            "lead_days": -12,
+            "class_agreement": null
+          },
+          {
+            "day": "2026-10-04",
+            "status": "ok",
+            "kind": "observed",
+            "lead_days": -11,
+            "class_agreement": null
+          },
+          {
+            "day": "2026-10-05",
+            "status": "ok",
+            "kind": "observed",
+            "lead_days": -10,
+            "class_agreement": null
+          },
+          {
+            "day": "2026-10-06",
+            "status": "ok",
+            "kind": "observed",
+            "lead_days": -9,
+            "class_agreement": null
+          },
+          {
+            "day": "2026-10-07",
+            "status": "ok",
+            "kind": "observed",
+            "lead_days": -8,
+            "class_agreement": null
+          },
+          {
+            "day": "2026-10-08",
+            "status": "ok",
+            "kind": "observed",
+            "lead_days": -7,
+            "class_agreement": null
+          },
+          {
+            "day": "2026-10-09",
+            "status": "ok",
+            "kind": "observed",
+            "lead_days": -6,
+            "class_agreement": null
+          },
+          {
+            "day": "2026-10-10",
+            "status": "ok",
+            "kind": "observed",
+            "lead_days": -5,
+            "class_agreement": null
+          },
+          {
+            "day": "2026-10-11",
+            "status": "ok",
+            "kind": "observed",
+            "lead_days": -4,
+            "class_agreement": null
+          },
+          {
+            "day": "2026-10-12",
+            "status": "ok",
+            "kind": "observed",
+            "lead_days": -3,
+            "class_agreement": null
+          },
+          {
+            "day": "2026-10-13",
+            "status": "ok",
+            "kind": "observed",
+            "lead_days": -2,
+            "class_agreement": null
+          },
+          {
+            "day": "2026-10-14",
+            "status": "ok",
+            "kind": "observed",
+            "lead_days": -1,
+            "class_agreement": null
+          },
+          {
+            "day": "2026-10-15",
+            "status": "ok",
+            "kind": "forecast",
+            "lead_days": 0,
+            "class_agreement": 0.9934
+          },
+          {
+            "day": "2026-10-16",
+            "status": "ok",
+            "kind": "forecast",
+            "lead_days": 1,
+            "class_agreement": 0.9913
+          },
+          {
+            "day": "2026-10-17",
+            "status": "ok",
+            "kind": "forecast",
+            "lead_days": 2,
+            "class_agreement": 0.9895
+          },
+          {
+            "day": "2026-10-18",
+            "status": "ok",
+            "kind": "forecast",
+            "lead_days": 3,
+            "class_agreement": 0.9683
+          },
+          {
+            "day": "2026-10-19",
+            "status": "ok",
+            "kind": "forecast",
+            "lead_days": 4,
+            "class_agreement": 0.9407
+          },
+          {
+            "day": "2026-10-20",
+            "status": "ok",
+            "kind": "forecast",
+            "lead_days": 5,
+            "class_agreement": 0.9167
+          },
+          {
+            "day": "2026-10-21",
+            "status": "ok",
+            "kind": "forecast",
+            "lead_days": 6,
+            "class_agreement": 0.8955
+          },
+          {
+            "day": "2026-10-22",
+            "status": "ok",
+            "kind": "forecast",
+            "lead_days": 7,
+            "class_agreement": 0.8766
+          },
+          {
+            "day": "2026-10-23",
+            "status": "ok",
+            "kind": "forecast",
+            "lead_days": 8,
+            "class_agreement": 0.825
+          },
+          {
+            "day": "2026-10-24",
+            "status": "ok",
+            "kind": "forecast",
+            "lead_days": 9,
+            "class_agreement": 0.778
+          }
+        ]
+      },
+      {
+        "code": "morchella_spp",
+        "common_name_fr": "morille",
+        "scientific_names": [
+          "Morchella"
+        ],
+        "confidence": "to_confirm",
+        "days": [
+          {
+            "day": "2026-10-01",
+            "status": "out_of_season",
+            "kind": "observed",
+            "lead_days": -14,
+            "class_agreement": null
+          },
+          {
+            "day": "2026-10-02",
+            "status": "out_of_season",
+            "kind": "observed",
+            "lead_days": -13,
+            "class_agreement": null
+          },
+          {
+            "day": "2026-10-03",
+            "status": "out_of_season",
+            "kind": "observed",
+            "lead_days": -12,
+            "class_agreement": null
+          },
+          {
+            "day": "2026-10-04",
+            "status": "out_of_season",
+            "kind": "observed",
+            "lead_days": -11,
+            "class_agreement": null
+          },
+          {
+            "day": "2026-10-05",
+            "status": "out_of_season",
+            "kind": "observed",
+            "lead_days": -10,
+            "class_agreement": null
+          },
+          {
+            "day": "2026-10-06",
+            "status": "out_of_season",
+            "kind": "observed",
+            "lead_days": -9,
+            "class_agreement": null
+          },
+          {
+            "day": "2026-10-07",
+            "status": "out_of_season",
+            "kind": "observed",
+            "lead_days": -8,
+            "class_agreement": null
+          },
+          {
+            "day": "2026-10-08",
+            "status": "out_of_season",
+            "kind": "observed",
+            "lead_days": -7,
+            "class_agreement": null
+          },
+          {
+            "day": "2026-10-09",
+            "status": "out_of_season",
+            "kind": "observed",
+            "lead_days": -6,
+            "class_agreement": null
+          },
+          {
+            "day": "2026-10-10",
+            "status": "out_of_season",
+            "kind": "observed",
+            "lead_days": -5,
+            "class_agreement": null
+          },
+          {
+            "day": "2026-10-11",
+            "status": "out_of_season",
+            "kind": "observed",
+            "lead_days": -4,
+            "class_agreement": null
+          },
+          {
+            "day": "2026-10-12",
+            "status": "out_of_season",
+            "kind": "observed",
+            "lead_days": -3,
+            "class_agreement": null
+          },
+          {
+            "day": "2026-10-13",
+            "status": "out_of_season",
+            "kind": "observed",
+            "lead_days": -2,
+            "class_agreement": null
+          },
+          {
+            "day": "2026-10-14",
+            "status": "out_of_season",
+            "kind": "observed",
+            "lead_days": -1,
+            "class_agreement": null
+          },
+          {
+            "day": "2026-10-15",
+            "status": "out_of_season",
+            "kind": "forecast",
+            "lead_days": 0,
+            "class_agreement": 0.9952
+          },
+          {
+            "day": "2026-10-16",
+            "status": "out_of_season",
+            "kind": "forecast",
+            "lead_days": 1,
+            "class_agreement": 0.993
+          },
+          {
+            "day": "2026-10-17",
+            "status": "out_of_season",
+            "kind": "forecast",
+            "lead_days": 2,
+            "class_agreement": 0.9914
+          },
+          {
+            "day": "2026-10-18",
+            "status": "out_of_season",
+            "kind": "forecast",
+            "lead_days": 3,
+            "class_agreement": 0.9593
+          },
+          {
+            "day": "2026-10-19",
+            "status": "out_of_season",
+            "kind": "forecast",
+            "lead_days": 4,
+            "class_agreement": 0.9278
+          },
+          {
+            "day": "2026-10-20",
+            "status": "out_of_season",
+            "kind": "forecast",
+            "lead_days": 5,
+            "class_agreement": 0.8979
+          },
+          {
+            "day": "2026-10-21",
+            "status": "out_of_season",
+            "kind": "forecast",
+            "lead_days": 6,
+            "class_agreement": 0.8153
+          },
+          {
+            "day": "2026-10-22",
+            "status": "out_of_season",
+            "kind": "forecast",
+            "lead_days": 7,
+            "class_agreement": 0.744
+          },
+          {
+            "day": "2026-10-23",
+            "status": "out_of_season",
+            "kind": "forecast",
+            "lead_days": 8,
+            "class_agreement": 0.6806
+          },
+          {
+            "day": "2026-10-24",
+            "status": "out_of_season",
+            "kind": "forecast",
+            "lead_days": 9,
+            "class_agreement": 0.614
+          }
+        ]
+      }
+    ]
+  }
+}
