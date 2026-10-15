@@ -87,13 +87,16 @@ The full list of sources for a run is in `https://api.bredouille.app/api/manifes
 ## Privacy
 
 - No accounts, no cookies, no storage. The Worker keeps nothing between requests.
-- Coordinates are rounded to 0.01° (about 1 km) before they are sent to the Bredouille API and to geo.api.gouv.fr. The server never logs coordinates, place names or tool arguments. Rate limiting keys on a truncated SHA-256 hash of the client address, held in memory for one minute.
+- Coordinates are rounded to 0.01° (about 1 km) before they are sent to the Bredouille API and to geo.api.gouv.fr. The server never logs coordinates, place names or tool arguments. Rate limiting keys on a truncated SHA-256 hash (optionally salted) of the client address or of the anonymized user id the host sends (ChatGPT's `openai/subject`), held for one minute. Neither is logged.
 - Answers never include the coordinates of the 1 km cell, only the commune name. `geocoder` returns commune centres, which are public.
 - Privacy policy: [bredouille.app/confidentialite](https://bredouille.app/confidentialite/).
 
 ## Limits
 
-- Rate limit: 30 MCP requests per minute per client (Workers rate limiting binding, counted per Cloudflare location; falls back to a per-isolate counter when the binding is absent). Above that: HTTP 429 with `retry-after: 60`.
+- Per user: 30 tool calls (and resource reads) per minute. The user is the anonymized identifier the host sends with the call: `_meta["openai/subject"]` from ChatGPT, else `_meta["openai/session"]`, else an `Mcp-Session-Id` header. Above the limit, a tool call gets a short French tool error asking to retry in a minute; a resource read gets HTTP 429. Hosts that send no identifier, Claude among them, are covered by the per-address limit only.
+- Per address: 600 MCP requests per minute per client address, all messages counted. Above that: HTTP 429 with `retry-after: 60`.
+- Per day: a daily request cap, counted per UTC day. Once it is reached, tool calls get a French tool error asking to come back the next day, with the safety line and the link to bredouille.app; other MCP messages still answer, and other pages return HTTP 429 with `retry-after` set to UTC midnight. `/health` always answers. The count is approximate: each isolate counts in memory and, with the optional `DAILY_COUNTER` KV namespace, shares its total every 100 requests, so the cap can trigger a little after the set value, never before.
+- Per-minute limits use the Workers rate limiting bindings, counted per Cloudflare location; without the bindings, each isolate counts alone.
 - Upstream answers are cached at the edge (Cache API) for 10 minutes, commune lookups for 24 hours, and only after they pass their schema check. The Cache API does nothing on `*.workers.dev`, so each isolate also keeps its last 200 answers in memory. Every upstream call has a 6 s timeout covering the body, and bodies over 2 MB are refused.
 - Request bodies over 64 KB are refused.
 
@@ -115,17 +118,22 @@ Configuration (`wrangler.toml` `[vars]`):
 |---|---|---|
 | `BREDOUILLE_API_URL` | `https://api.bredouille.app` | Bredouille API base URL |
 | `SITE_URL` | `https://bredouille.app` | Base of the links in answers |
-| `RATE_LIMIT_PER_MINUTE` | `30` | Fallback limiter, when the binding is absent |
+| `RATE_LIMIT_USER_PER_MINUTE` | `30` | Tool calls and resource reads per minute and user (in-memory fallback; set the `MCP_USER_LIMITER` binding's `limit` to the same value) |
+| `RATE_LIMIT_IP_PER_MINUTE` | `600` | MCP requests per minute and client address (in-memory fallback; same rule for `MCP_IP_LIMITER`) |
+| `DAILY_CAP` | `40000` | Requests per UTC day before tool calls are turned away; `0` disables it |
+| `DAILY_CAP_FLUSH_EVERY` | `100` | Requests between two syncs of an isolate's daily count to `DAILY_COUNTER` |
+| `RATE_LIMIT_SALT` | unset | Secret salt for the hashed limiter keys (`wrangler secret put RATE_LIMIT_SALT`) |
 | `WIDGET_DOMAIN` | unset | Widget sandbox origin, for ChatGPT app review |
 | `OPENAI_APPS_CHALLENGE` | unset | Token served at `/.well-known/openai-apps-challenge` for ChatGPT domain verification |
 
-Optional bindings: `MCP_LIMITER` (rate limiting) and `BREDOUILLE_API` (service binding to the `bredouille-api` Worker, for deployments on the same Cloudflare account).
+Optional bindings: `MCP_USER_LIMITER` and `MCP_IP_LIMITER` (rate limiting), `DAILY_COUNTER` (KV namespace shared by isolates for the daily count), and `BREDOUILLE_API` (service binding to the `bredouille-api` Worker, for deployments on the same Cloudflare account).
 
 Please keep the safety line and the links to bredouille.app if you run a public copy, and credit the index (CC BY 4.0, Bredouille).
 
 ## Development
 
-- `src/worker.ts`: HTTP entry, CORS, body limit, rate limit, one MCP server per request.
+- `src/worker.ts`: HTTP entry, CORS, body limit, rate limits, daily cap, one MCP server per request.
+- `src/identity.ts`, `src/rate-limit.ts`, `src/daily-cap.ts`: user identifier extraction, hashed keys and limiters, the approximate daily count.
 - `src/server.ts`: tool and resource registration (zod schemas, annotations, widget metadata).
 - `src/tools/*`: one file per tool, pure functions over a `DataSource`.
 - `src/bredouille.ts`, `src/upstream.ts`: upstream calls, edge cache, timeouts, schema checks.

@@ -15,7 +15,7 @@ In scope: this repository and the server it runs at `mcp.bredouille.app`. The Br
 - Upstream calls go only to fixed hosts (`api.bredouille.app`, `geo.api.gouv.fr`). User input never builds a hostname; query values are URL-encoded.
 - Upstream bodies are parsed as JSON and checked against a schema, with a 6 s timeout per call. A failure becomes a short French sentence; stack traces and upstream bodies are never returned.
 - Logs record the error kind and the upstream name only. Coordinates, place names and tool arguments are never logged.
-- The rate limiter keys on a truncated SHA-256 hash of the client address.
+- The rate limiters key on a truncated SHA-256 hash (salted with the optional `RATE_LIMIT_SALT` secret) of the client address or of the anonymized user id the host sends (`openai/subject`, `openai/session`, `Mcp-Session-Id`). Neither the address nor the identifier is logged or stored.
 - Workers Logs are on (`[observability]` in `wrangler.toml`) and only hold what the code logs. Keep Workers traces off: a trace would record subrequest URLs, which carry coordinates rounded to 0.01° (about 1 km).
 - Upstream error text is never shown: each failure kind has a fixed French message.
 - The widget fetches nothing (empty CSP connect and resource lists), escapes every value it renders, and only links to `https://bredouille.app/`.
