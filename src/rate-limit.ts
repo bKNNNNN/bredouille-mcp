@@ -32,8 +32,23 @@ export class MemoryRateLimiter implements RateLimiter {
   }
 }
 
-/** The key never stores an address: a short SHA-256 digest of it. */
-export async function clientKey(address: string): Promise<string> {
-  const digest = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(`bredouille-mcp:${address}`));
+/**
+ * A limiter key never stores the identifier itself: a truncated SHA-256 digest of
+ * scope, optional secret salt and value. Without the salt, a short public identifier
+ * (an IPv4 address) could be recovered by brute force; with it, it cannot.
+ */
+export async function hashKey(scope: string, value: string, salt = ''): Promise<string> {
+  const digest = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(`bredouille-mcp:${scope}:${salt}:${value}`));
   return [...new Uint8Array(digest).slice(0, 12)].map((b) => b.toString(16).padStart(2, '0')).join('');
+}
+
+/** The key for a client address. */
+export function clientKey(address: string, salt = ''): Promise<string> {
+  return hashKey('ip', address, salt);
+}
+
+/** A positive integer from a `[vars]` string, or the default. */
+export function positiveInt(raw: string | undefined, fallback: number): number {
+  const n = Number(raw);
+  return Number.isInteger(n) && n > 0 ? n : fallback;
 }

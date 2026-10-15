@@ -1,10 +1,11 @@
 import { describe, expect, it } from 'vitest';
+import { DailyCounter } from '../src/daily-cap';
 import { MemoryRateLimiter } from '../src/rate-limit';
 import { createWorker, type Env } from '../src/worker';
 import { NOW, testData } from './helpers';
 
 const ctx = { waitUntil: () => undefined, passThroughOnException: () => undefined, props: {} } as unknown as ExecutionContext;
-const worker = createWorker({ data: testData(), now: () => NOW });
+const worker = createWorker({ data: testData(), now: () => NOW, counter: new DailyCounter('test') });
 
 const rpc = (body: unknown, env: Env = {}, headers: Record<string, string> = {}) =>
   worker.fetch(
@@ -13,7 +14,7 @@ const rpc = (body: unknown, env: Env = {}, headers: Record<string, string> = {})
       headers: { 'content-type': 'application/json', accept: 'application/json, text/event-stream', 'cf-connecting-ip': '198.51.100.1', ...headers },
       body: JSON.stringify(body),
     }),
-    { MCP_LIMITER: new MemoryRateLimiter(100), ...env },
+    { MCP_IP_LIMITER: new MemoryRateLimiter(100), ...env },
     ctx,
   );
 
@@ -42,7 +43,7 @@ describe('worker /mcp (stateless Streamable HTTP, JSON responses)', () => {
     expect(get.status).toBe(405);
     const big = await rpc({ jsonrpc: '2.0', id: 4, method: 'tools/list', params: { pad: 'x'.repeat(70_000) } });
     expect(big.status).toBe(413);
-    const env: Env = { MCP_LIMITER: new MemoryRateLimiter(1) };
+    const env: Env = { MCP_IP_LIMITER: new MemoryRateLimiter(1) };
     expect((await rpc({ jsonrpc: '2.0', id: 5, method: 'tools/list', params: {} }, env)).status).toBe(200);
     const limited = await rpc({ jsonrpc: '2.0', id: 6, method: 'tools/list', params: {} }, env);
     expect(limited.status).toBe(429);
@@ -68,7 +69,7 @@ describe('worker /mcp (stateless Streamable HTTP, JSON responses)', () => {
     });
     const res = await worker.fetch(
       new Request('https://mcp.test/mcp', { method: 'POST', headers: { 'content-type': 'application/json' }, body: stream, duplex: 'half' } as RequestInit),
-      { MCP_LIMITER: new MemoryRateLimiter(100) },
+      { MCP_IP_LIMITER: new MemoryRateLimiter(100) },
       ctx,
     );
     expect(res.status).toBe(413);

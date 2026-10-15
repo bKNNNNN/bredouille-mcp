@@ -12,19 +12,42 @@ routes = [{ pattern = "mcp.bredouille.app", custom_domain = true }]
 [vars]
 BREDOUILLE_API_URL = "https://api.bredouille.app"
 SITE_URL = "https://bredouille.app"
-# Requests per minute and client before 429 (in-memory fallback when the binding is absent).
-RATE_LIMIT_PER_MINUTE = "30"
+# Tool calls and resource reads per minute and end user, keyed on the identifier the host
+# sends (ChatGPT: _meta "openai/subject"). Requests without one only get the per-IP limit.
+# Used by the in-memory fallback; keep MCP_USER_LIMITER's `limit` below equal to it.
+RATE_LIMIT_USER_PER_MINUTE = "30"
+# MCP requests per minute and client address, all messages. Keep MCP_IP_LIMITER's `limit` equal.
+RATE_LIMIT_IP_PER_MINUTE = "600"
+# Worker requests per UTC day (approximate, see src/daily-cap.ts) before tool calls are
+# turned away with a message. "0" disables the cap.
+DAILY_CAP = "40000"
+# Requests between two syncs of an isolate's daily count to the DAILY_COUNTER KV namespace.
+DAILY_CAP_FLUSH_EVERY = "100"
+# Optional secret salt for the hashed limiter keys: `npx wrangler secret put RATE_LIMIT_SALT`.
 # Widget sandbox origin, asked for by ChatGPT app review. Set once the custom domain is live.
 WIDGET_DOMAIN = "https://mcp.bredouille.app"
 # Token for ChatGPT's MCP domain verification (served at /.well-known/openai-apps-challenge).
 # OPENAI_APPS_CHALLENGE = ""
 
-# Workers rate limiting binding. Counts per Cloudflare location, approximate.
-# If the account refuses it, delete this block: the Worker falls back to a per-isolate counter.
+# Workers rate limiting bindings. Counts per Cloudflare location, approximate. The binding's
+# `limit` wins over the vars above; keep them equal. If the account refuses the bindings,
+# delete these blocks: the Worker falls back to per-isolate counters sized by the vars.
 [[ratelimits]]
-name = "MCP_LIMITER"
-namespace_id = "2001"
+name = "MCP_USER_LIMITER"
+namespace_id = "2002"
 simple = { limit = 30, period = 60 }
+
+[[ratelimits]]
+name = "MCP_IP_LIMITER"
+namespace_id = "2003"
+simple = { limit = 600, period = 60 }
+
+# Shared daily request count across isolates (optional). Without it each isolate only knows
+# its own count. Create it once with `npx wrangler kv namespace create DAILY_COUNTER`, then
+# uncomment and paste the id.
+# [[kv_namespaces]]
+# binding = "DAILY_COUNTER"
+# id = ""
 
 # Optional: call bredouille-api through a service binding when both Workers live on the
 # same account. No public hop, and MCP traffic does not share the API's per-IP read limit.
