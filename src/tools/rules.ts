@@ -45,7 +45,7 @@ export function ruleLines(records: readonly RuleRecord[], today: string): string
         ...(limit ? [`  Limite : ${limit}.`] : []),
         ...(tools ? [`  ${tools}`] : []),
         ...(days ? [`  ${days}`] : []),
-        `  Portée : ${r.scope.label}. Source : ${r.source_name ?? 'non précisée'}${r.source_url ? `, ${r.source_url}` : ''} (vérifié le ${fullDate(r.checked_at)}).`,
+        `  Portée : ${r.scope.label}. Source : ${r.source_name ?? 'non précisée'}${r.source_url?.startsWith('https://') ? `, ${r.source_url}` : ''} (vérifié le ${fullDate(r.checked_at)}).`,
       ];
     });
 }
@@ -77,7 +77,8 @@ export async function reglesEtChasse(ctx: ToolContext, input: { departement: str
   let rules: Rules | null = null;
   try {
     rules = await ctx.data.rules();
-  } catch {
+  } catch (error) {
+    console.warn('[rules]', error instanceof Error ? error.name : 'unknown');
     rules = null;
   }
   const records = rules?.records.filter((r) => r.dept === dept.code) ?? [];

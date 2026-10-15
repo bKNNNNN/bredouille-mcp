@@ -23,7 +23,7 @@ export async function speciesResource(data: DataSource, site: string): Promise<s
     const status = m ? (CONFIDENCE_FR[m.confidence] ?? m.confidence) : 'inconnu';
     lines.push(`${s.code} | ${s.name} | ${s.latin} | ${status} | ${site}/especes/${s.slug}/`);
   }
-  lines.push('', 'Les outils acceptent le code ou le nom français, au singulier ou au pluriel.', '', SAFETY_LINE);
+  lines.push('', 'Les outils acceptent le code ou le nom français, au singulier ou au pluriel.', '', SAFETY_LINE, `Sur bredouille.app : ${site}/especes/`);
   return frenchSpacing(lines.join('\n'));
 }
 

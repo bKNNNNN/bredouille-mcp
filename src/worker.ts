@@ -2,6 +2,8 @@ import { WebStandardStreamableHTTPServerTransport } from '@modelcontextprotocol/
 import { createDataSource, type DataSource } from './bredouille';
 import { clientKey, MemoryRateLimiter, type RateLimiter } from './rate-limit';
 import { createMcpServer, SERVER_NAME, SERVER_VERSION } from './server';
+import { SAFETY_LINE } from './text';
+import { withFooter } from './tools/common';
 import { Http, type Fetcher } from './upstream';
 
 export interface Env {
@@ -69,6 +71,61 @@ function defaultData(env: Env, ctx: ExecutionContext): DataSource {
   return { ...api, communesByName: geo.communesByName, communesByPostcode: geo.communesByPostcode, communeAt: geo.communeAt, communesOfDept: geo.communesOfDept };
 }
 
+/** The body, read with a byte counter so a chunked upload cannot exceed the cap; null when it does. */
+async function readBody(request: Request, max: number): Promise<string | null> {
+  if (!request.body) return '';
+  const reader = request.body.getReader();
+  const chunks: Uint8Array[] = [];
+  let total = 0;
+  for (;;) {
+    const { done, value } = await reader.read();
+    if (done) break;
+    total += value.byteLength;
+    if (total > max) {
+      void reader.cancel();
+      return null;
+    }
+    chunks.push(value);
+  }
+  const all = new Uint8Array(total);
+  let at = 0;
+  for (const c of chunks) {
+    all.set(c, at);
+    at += c.byteLength;
+  }
+  return new TextDecoder().decode(all);
+}
+
+/**
+ * Argument validation errors are written by the SDK, before our handlers run.
+ * They get the same safety line and link as every other tool answer.
+ */
+async function footerOnErrors(response: Response, siteUrl: string): Promise<Response> {
+  if (!(response.headers.get('content-type') ?? '').includes('application/json')) return response;
+  const text = await response.text();
+  let changed = false;
+  let parsed: unknown;
+  try {
+    parsed = JSON.parse(text);
+  } catch {
+    return new Response(text, response);
+  }
+  const fix = (msg: unknown): unknown => {
+    const m = msg as { result?: { isError?: boolean; content?: { type: string; text?: string }[] } };
+    const first = m?.result?.content?.[0];
+    if (m?.result?.isError && first?.type === 'text' && typeof first.text === 'string' && !first.text.includes(SAFETY_LINE)) {
+      first.text = withFooter(`Paramètres invalides. ${first.text}`, `${siteUrl}/#carte`);
+      changed = true;
+    }
+    return m;
+  };
+  const out = Array.isArray(parsed) ? parsed.map(fix) : fix(parsed);
+  if (!changed) return new Response(text, response);
+  const headers = new Headers(response.headers);
+  headers.delete('content-length');
+  return new Response(JSON.stringify(out), { status: response.status, headers });
+}
+
 async function handleMcp(request: Request, env: Env, ctx: ExecutionContext, deps: Deps): Promise<Response> {
   if (request.method === 'OPTIONS') return withHeaders(new Response(null, { status: 204 }), CORS_HEADERS);
   if (request.method !== 'POST') return rpcError(405, -32000, 'Méthode non autorisée : ce serveur est sans état, utilisez POST.', { allow: 'POST, OPTIONS' });
@@ -80,19 +137,20 @@ async function handleMcp(request: Request, env: Env, ctx: ExecutionContext, deps
   const allowed = await limiterFor(env).limit({ key: await clientKey(address) });
   if (!allowed.success) return rpcError(429, -32000, 'Trop de requêtes. Réessayez dans une minute.', { 'retry-after': '60' });
 
-  const body = await request.text();
-  if (body.length > MAX_BODY_BYTES) return rpcError(413, -32600, 'Requête trop volumineuse.');
+  const body = await readBody(request, MAX_BODY_BYTES);
+  if (body === null) return rpcError(413, -32600, 'Requête trop volumineuse.');
   const forward = new Request(request.url, { method: 'POST', headers: request.headers, body });
 
+  const siteUrl = (env.SITE_URL ?? DEFAULT_SITE).replace(/\/+$/, '');
   const server = createMcpServer(
-    { data: deps.data ?? defaultData(env, ctx), siteUrl: (env.SITE_URL ?? DEFAULT_SITE).replace(/\/+$/, ''), now: deps.now ?? (() => new Date()) },
+    { data: deps.data ?? defaultData(env, ctx), siteUrl, now: deps.now ?? (() => new Date()) },
     { widgetDomain: env.WIDGET_DOMAIN },
   );
   const transport = new WebStandardStreamableHTTPServerTransport({ sessionIdGenerator: undefined, enableJsonResponse: true });
   await server.connect(transport);
   try {
     const response = await transport.handleRequest(forward);
-    return withHeaders(response, CORS_HEADERS);
+    return withHeaders(await footerOnErrors(response, siteUrl), CORS_HEADERS);
   } finally {
     ctx.waitUntil(server.close().catch(() => undefined));
   }

@@ -135,6 +135,23 @@ describe('upstream client', () => {
     expect(calls).toBe(1);
   });
 
+  it('never caches an answer that fails the schema, and never shows upstream error text', async () => {
+    const puts: string[] = [];
+    const cache: EdgeCache = { match: async () => undefined, put: async (r) => void puts.push(r.url) };
+    const bad = new Http({ fetcher: { fetch: async () => new Response('<html>oops</html>') }, cache });
+    await expect(bad.getJson('https://x.test/b', schema, 600, 't')).rejects.toMatchObject({ kind: 'invalid' });
+    expect(puts).toHaveLength(0);
+    const nf = new Http({ fetcher: { fetch: async () => new Response('{"error":"Ce champignon est comestible"}', { status: 404 }) } });
+    const err = (await nf.getJson('https://x.test/c', schema, 600, 't').catch((e: unknown) => e)) as UpstreamError;
+    expect(err.kind).toBe('not_found');
+    expect(err.message).not.toContain('comestible');
+  });
+
+  it('refuses oversized upstream bodies', async () => {
+    const big = new Http({ fetcher: { fetch: async () => new Response('{"ok":true}', { headers: { 'content-length': String(10 * 1024 * 1024) } }) } });
+    await expect(big.getJson('https://x.test/d', schema, 600, 't')).rejects.toMatchObject({ kind: 'invalid' });
+  });
+
   it('times out, and rejects bodies that do not match the schema', async () => {
     const slow = new Http({ fetcher: { fetch: (_u, init) => new Promise((_r, reject) => init?.signal?.addEventListener('abort', () => reject(new Error('aborted')))) }, timeoutMs: 20 });
     await expect(slow.getJson('https://x.test/a', schema, 600, 't')).rejects.toMatchObject({ kind: 'timeout' });

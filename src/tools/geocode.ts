@@ -72,7 +72,7 @@ export async function geocoder(ctx: ToolContext, input: { lieu: string }): Promi
 
     const places = communes.map(toPlace).filter((p): p is Place => p !== null).slice(0, 5);
     if (places.length === 0) {
-      return refusal(`Aucune commune de France métropolitaine trouvée pour « ${input.lieu.slice(0, 80)} ». Vérifiez l’orthographe, ou ajoutez le département (par exemple « Tulle (19) »).`, url);
+      return refusal(`Aucune commune de France métropolitaine trouvée pour ce nom. Vérifiez l’orthographe, ou ajoutez le département (par exemple « Tulle (19) »).`, url);
     }
     const [first, ...others] = places;
     const body = [

@@ -49,6 +49,31 @@ describe('worker /mcp (stateless Streamable HTTP, JSON responses)', () => {
     expect(limited.headers.get('retry-after')).toBe('60');
   });
 
+  it('adds the safety footer to argument validation errors', async () => {
+    const res = await rpc({ jsonrpc: '2.0', id: 7, method: 'tools/call', params: { name: 'conditions_lieu', arguments: { lat: 'abc', lon: 1 } } });
+    const body = (await res.json()) as { result: { isError: boolean; content: { text: string }[] } };
+    expect(body.result.isError).toBe(true);
+    expect(body.result.content[0]!.text).toContain('Faites contrôler toute cueillette.');
+    expect(body.result.content[0]!.text).toContain('https://bredouille.app/#carte');
+  });
+
+  it('refuses a chunked body over the cap without a content-length', async () => {
+    const chunk = new TextEncoder().encode('x'.repeat(16 * 1024));
+    let sent = 0;
+    const stream = new ReadableStream<Uint8Array>({
+      pull(c) {
+        if (sent++ < 8) c.enqueue(chunk);
+        else c.close();
+      },
+    });
+    const res = await worker.fetch(
+      new Request('https://mcp.test/mcp', { method: 'POST', headers: { 'content-type': 'application/json' }, body: stream, duplex: 'half' } as RequestInit),
+      { MCP_LIMITER: new MemoryRateLimiter(100) },
+      ctx,
+    );
+    expect(res.status).toBe(413);
+  });
+
   it('answers CORS preflight, health and unknown paths', async () => {
     const pre = await worker.fetch(new Request('https://mcp.test/mcp', { method: 'OPTIONS' }), {}, ctx);
     expect(pre.status).toBe(204);

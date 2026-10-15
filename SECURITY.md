@@ -16,6 +16,8 @@ In scope: this repository and the server it runs at `mcp.bredouille.app`. The Br
 - Upstream bodies are parsed as JSON and checked against a schema, with a 6 s timeout per call. A failure becomes a short French sentence; stack traces and upstream bodies are never returned.
 - Logs record the error kind and the upstream name only. Coordinates, place names and tool arguments are never logged.
 - The rate limiter keys on a truncated SHA-256 hash of the client address.
+- Workers Logs are on (`[observability]` in `wrangler.toml`) and only hold what the code logs. Keep Workers traces off: a trace would record subrequest URLs, which carry coordinates rounded to 0.01° (about 1 km).
+- Upstream error text is never shown: each failure kind has a fixed French message.
 - The widget fetches nothing (empty CSP connect and resource lists), escapes every value it renders, and only links to `https://bredouille.app/`.
 
 ## Supported versions

@@ -82,6 +82,7 @@ a.open{font-size:13px;font-weight:600;color:var(--fg);text-decoration:underline;
   function fromOpenAI(){if(window.openai&&window.openai.toolOutput){render(window.openai.toolOutput);}}
   window.addEventListener("openai:set_globals",fromOpenAI,{passive:true});
   window.addEventListener("message",function(e){
+    if(e.source!==window.parent){return;}
     var m=e.data;
     if(!m||m.jsonrpc!=="2.0"){return;}
     if(m.method==="ui/notifications/tool-result"&&m.params){render(m.params.structuredContent);}

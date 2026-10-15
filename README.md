@@ -94,7 +94,7 @@ The full list of sources for a run is in `https://api.bredouille.app/api/manifes
 ## Limits and cost
 
 - Rate limit: 30 MCP requests per minute per client (Workers rate limiting binding, counted per Cloudflare location; falls back to a per-isolate counter when the binding is absent). Above that: HTTP 429 with `retry-after: 60`.
-- Upstream answers are cached at the edge (Cache API) for 10 minutes, commune lookups for 24 hours. Every upstream call has a 6 s timeout and its body is checked against a schema.
+- Upstream answers are cached at the edge (Cache API) for 10 minutes, commune lookups for 24 hours, and only after they pass their schema check. The Cache API does nothing on `*.workers.dev`, so each isolate also keeps its last 200 answers in memory. Every upstream call has a 6 s timeout covering the body, and bodies over 2 MB are refused.
 - Request bodies over 64 KB are refused.
 
 Fetches per tool call, before the cache:
